@@ -87,7 +87,7 @@ const ContactForm = () => {
         />
       </label>
       <label>
-        Gostaria de agendar uma consultoria gratuita
+        Gostaria de agendar uma consultoria
         <input type="checkbox" name="agendar" />
       </label>
       <button type="submit">Enviar Mensagem</button>
