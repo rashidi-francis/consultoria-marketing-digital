@@ -61,7 +61,7 @@ const ContactForm = () => {
             </span>
           </h2>
           <p className="text-gray-300">
-            Entre em contato conosco ou agende uma consultoria gratuita para entendermos as necessidades do seu negócio.
+            Entre em contato conosco ou agende uma consultoria para entendermos as necessidades do seu negócio e te ajudarmos de forma personalizada.
           </p>
         </div>
 
@@ -78,8 +78,8 @@ const ContactForm = () => {
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-white font-medium mb-1">Telefone</h4>
-                      <p className="text-gray-400">(11) 4002-8922</p>
+                      <h4 className="text-white font-medium mb-1">WhatsApp</h4>
+                      <p className="text-gray-400">(11) 9 3050-0397</p>
                     </div>
                   </div>
                   
@@ -89,7 +89,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-medium mb-1">Email</h4>
-                      <p className="text-gray-400">contato@ajudoseunegocio.com.br</p>
+                      <p className="text-gray-400">marketing@ajudoseunegocio.com.br</p>
                     </div>
                   </div>
                   
@@ -99,7 +99,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-medium mb-1">Endereço</h4>
-                      <p className="text-gray-400">Av. Paulista, 1000, São Paulo - SP</p>
+                      <p className="text-gray-400">Rua Praça da Sé, 21 - Centro São Paulo - SP</p>
                     </div>
                   </div>
                   
