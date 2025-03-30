@@ -295,7 +295,7 @@ const ContactForm = () => {
                         />
                         <label htmlFor="schedule" className="ml-2 text-sm text-gray-300 flex items-center">
                           <Calendar className="w-4 h-4 mr-1 text-primary" />
-                          Gostaria de agendar uma consultoria gratuita
+                          Gostaria de agendar uma consultoria
                         </label>
                       </div>
                       
