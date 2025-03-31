@@ -45,7 +45,7 @@ export default FormComponent;
     setTimeout(() => {
       setFormSubmitted(true);
     }, 1000);
-  };
+  
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
