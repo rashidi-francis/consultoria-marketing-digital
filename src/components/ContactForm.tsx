@@ -1,47 +1,47 @@
 
+"use client";
 import { useState } from "react";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Send, 
-  Calendar,
-  Clock,
-  MessageSquare,
-  User
-} from "lucide-react";
 
-const ContactForm = () => {
+const FormComponent = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
-    company: "",
     message: "",
-    service: "",
-    schedule: false
   });
-  
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value, type } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
-    });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would normally send the form data to your backend
-    console.log("Form submitted:", formData);
+
+  return (
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <p>
+        <label>
+          Nome <input type="text" name="name" value={formData.name} onChange={handleChange} />
+        </label>
+      </p>
+      <p>
+        <label>
+          Email <input type="email" name="email" value={formData.email} onChange={handleChange} />
+        </label>
+      </p>
+      <p>
+        <label>
+          Mensagem <textarea name="message" value={formData.message} onChange={handleChange} />
+        </label>
+      </p>
+      <p>
+        <button type="submit">Enviar</button>
+      </p>
+    </form>
+  );
+};
+
+export default FormComponent;
+
     
-    // Simulate successful form submission
-    setTimeout(() => {
-      setFormSubmitted(true);
-    }, 1000);
-  };
+ 
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
