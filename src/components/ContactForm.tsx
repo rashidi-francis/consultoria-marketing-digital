@@ -38,8 +38,6 @@ const FormComponent = () => {
   );
 };
 
-export default FormComponent;
-
     
     // Simulate successful form submission
     setTimeout(() => {
@@ -47,6 +45,7 @@ export default FormComponent;
     }, 1000);
   
 
+const ContactForm = () => {
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       {/* Background Elements */}
@@ -354,9 +353,9 @@ export default FormComponent;
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>        
     </section>
   );
+};
 
 export default ContactForm;
