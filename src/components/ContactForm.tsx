@@ -358,6 +358,5 @@ export default FormComponent;
       </div>
     </section>
   );
-};
 
 export default ContactForm;
