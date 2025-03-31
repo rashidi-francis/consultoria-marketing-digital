@@ -26,7 +26,7 @@ const Footer = () => {
             
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/ajudoseunegocio" 
                 className="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all"
                 aria-label="Facebook"
               >
@@ -35,7 +35,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a 
-                href="#" 
+                href="https://instagram.com/ajudo_seu_negocio" 
                 className="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all"
                 aria-label="Instagram"
               >
@@ -44,7 +44,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a 
-                href="#" 
+                href="https://x.com/ajudoseunegocio" 
                 className="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all"
                 aria-label="Twitter"
               >
@@ -53,7 +53,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/ajudo-seu-negócio" 
                 className="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all"
                 aria-label="LinkedIn"
               >
@@ -168,15 +168,15 @@ const Footer = () => {
             <div className="mt-6 space-y-3">
               <div className="flex items-start">
                 <Phone className="w-5 h-5 text-primary mr-3 mt-0.5" />
-                <span className="text-gray-400">(11) 4002-8922</span>
+                <span className="text-gray-400">(11) 9 3050-0397</span>
               </div>
               <div className="flex items-start">
                 <Mail className="w-5 h-5 text-primary mr-3 mt-0.5" />
-                <span className="text-gray-400">contato@ajudoseunegocio.com.br</span>
+                <span className="text-gray-400">marketing@ajudoseunegocio.com.br</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 text-primary mr-3 mt-0.5" />
-                <span className="text-gray-400">Av. Paulista, 1000, São Paulo - SP</span>
+                <span className="text-gray-400">Rua Praça da Sé, 21 - Centro São Paulo - SP</span>
               </div>
             </div>
           </div>
