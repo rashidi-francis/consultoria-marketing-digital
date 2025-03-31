@@ -41,7 +41,11 @@ const FormComponent = () => {
 export default FormComponent;
 
     
- 
+    // Simulate successful form submission
+    setTimeout(() => {
+      setFormSubmitted(true);
+    }, 1000);
+  };
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
