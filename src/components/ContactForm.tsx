@@ -54,7 +54,6 @@ const ContactForm = () => {
   );
 };
 
-const ContactForm = () => {
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-6">
