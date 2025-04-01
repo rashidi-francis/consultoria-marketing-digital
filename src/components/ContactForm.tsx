@@ -1,47 +1,56 @@
-"use client";
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
-const FormComponent = () => {
+const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
+
+    const form = e.target as HTMLFormElement;
+    const formDataObj = new FormData(form);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        body: formDataObj,
+      });
+
+      if (response.ok) {
+        alert("Formulário enviado com sucesso!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert("Erro ao enviar o formulário.");
+      }
+    } catch (error) {
+      alert("Erro de rede. Tente novamente.");
+    }
   };
 
   return (
     <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-      <input type="hidden" name="form-name" value="contact" />
-      <p>
-        <label>
-          Nome <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-        </label>
-      </p>
-      <p>
-        <label>
-          Email <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-        </label>
-      </p>
-      <p>
-        <label>
-          Mensagem <textarea name="message" value={formData.message} onChange={handleChange} required />
-        </label>
-      </p>
-      <p>
-        <button type="submit">Enviar</button>
-      </p>
-      {formSubmitted && <p>Mensagem enviada com sucesso!</p>}
-    </form>
+  <input type="hidden" name="form-name" value="contact" />
+  <label>
+    Nome:
+    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+  </label>
+  <label>
+    Email:
+    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+  </label>
+  <label>
+    Mensagem:
+    <textarea name="message" value={formData.message} onChange={handleChange} required />
+  </label>
+  <button type="submit">Enviar</button>
+</form>
   );
 };
 
