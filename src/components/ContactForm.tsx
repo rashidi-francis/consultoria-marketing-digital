@@ -4,11 +4,9 @@ import {
   Mail, 
   MapPin, 
   Send, 
-  Calendar,
   Clock,
-  MessageSquare,
-  User,
-  Loader2
+  Instagram, 
+  Facebook
 } from "lucide-react";
 
 const ContactForm = () => {
@@ -16,34 +14,30 @@ const ContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    company: "",
     message: "",
-    service: "",
-    schedule: false
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value, type } = e.target;
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
+      [name]: value
     });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    
+    // Form submission for Netlify
+    const formElement = e.target as HTMLFormElement;
+    const formData = new FormData(formElement);
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        body: formData,
       });
 
       if (response.ok) {
@@ -53,23 +47,17 @@ const ContactForm = () => {
       }
     } catch (error) {
       console.error("Erro ao enviar formulário", error);
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-3/4 h-full bg-gradient-radial from-neon-purple/5 via-transparent to-transparent opacity-60"></div>
-      <div className="absolute bottom-0 right-0 w-full h-64 bg-gradient-to-t from-background to-transparent"></div>
-
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1 rounded-full border border-primary/30 bg-primary/5 text-sm font-medium text-primary mb-4">
             Contato
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             Vamos impulsionar seu
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-red ml-2">
               negócio digital
@@ -86,10 +74,10 @@ const ContactForm = () => {
             <div className="glass-card rounded-xl p-0.5 h-full">
               <div className="bg-card rounded-xl p-8 h-full">
                 <h3 className="text-2xl font-bold mb-6 text-white">Informações de Contato</h3>
-
+                
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="icon-box">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -97,9 +85,9 @@ const ContactForm = () => {
                       <p className="text-gray-400">(11) 9 3050-0397</p>
                     </div>
                   </div>
-
+                  
                   <div className="flex items-start">
-                    <div className="icon-box">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -107,9 +95,9 @@ const ContactForm = () => {
                       <p className="text-gray-400">marketing@ajudoseunegocio.com.br</p>
                     </div>
                   </div>
-
+                  
                   <div className="flex items-start">
-                    <div className="icon-box">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -117,9 +105,9 @@ const ContactForm = () => {
                       <p className="text-gray-400">Rua Praça da Sé, 21 - Centro São Paulo - SP</p>
                     </div>
                   </div>
-
+                  
                   <div className="flex items-start">
-                    <div className="icon-box">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Clock className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -127,23 +115,22 @@ const ContactForm = () => {
                       <p className="text-gray-400">Segunda - Sexta: 9h às 18h</p>
                     </div>
                   </div>
-                </div>
 
-                <div className="mt-10">
-                  <h4 className="text-white font-medium mb-4">Nos siga nas redes sociais</h4>
-                  <div className="flex space-x-4">
-                    <a href="https://www.facebook.com/ajudoseunegocio" className="social-link">
-                      Facebook
+                  {/* Social Media Links */}
+                  <div className="flex justify-start space-x-4 mt-6">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                      <Instagram className="w-8 h-8 text-primary hover:text-white transition-colors" />
                     </a>
-                    <a href="https://instagram.com/ajudo_seu_negocio" className="social-link">
-                      Instagram
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                      <Facebook className="w-8 h-8 text-primary hover:text-white transition-colors" />
                     </a>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
-
+          
           {/* Form Section */}
           <div className="lg:w-2/3">
             {formSubmitted ? (
@@ -152,30 +139,32 @@ const ContactForm = () => {
                 <p className="text-gray-400">Responderemos o mais breve possível.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                onSubmit={handleSubmit} 
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="bot-field" />
+
                 <div>
-                  <label htmlFor="name">Nome</label>
-                  <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+                  <label className="text-white block text-sm font-medium mb-2" htmlFor="name">Nome</label>
+                  <input type="text" name="name" id="name" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Seu nome" onChange={handleChange} />
                 </div>
 
                 <div>
-                  <label htmlFor="email">Email</label>
-                  <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                  <label className="text-white block text-sm font-medium mb-2" htmlFor="email">Email</label>
+                  <input type="email" name="email" id="email" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Seu e-mail" onChange={handleChange} />
                 </div>
 
                 <div>
-                  <label htmlFor="phone">Telefone</label>
-                  <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
+                  <label className="text-white block text-sm font-medium mb-2" htmlFor="message">Mensagem</label>
+                  <textarea name="message" id="message" required rows={4} className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Escreva sua mensagem" onChange={handleChange}></textarea>
                 </div>
 
-                <div>
-                  <label htmlFor="message">Mensagem</label>
-                  <textarea name="message" value={formData.message} onChange={handleChange} required></textarea>
-                </div>
-
-                <button type="submit" disabled={isSubmitting}>
-                  {isSubmitting ? <Loader2 className="animate-spin" /> : "Enviar"}
-                  <Send className="ml-3" />
+                <button type="submit" className="w-full py-3 px-6 bg-primary text-white rounded-full hover:bg-primary/80 transition-colors flex items-center justify-center">
+                  Enviar <Send className="ml-3" />
                 </button>
               </form>
             )}
