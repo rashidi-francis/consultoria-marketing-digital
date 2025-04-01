@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -33,26 +34,6 @@ const ContactForm = () => {
       alert("Erro de rede. Tente novamente.");
     }
   };
-
-  return (
-    <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-  <input type="hidden" name="form-name" value="contact" />
-  <label>
-    Nome:
-    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-  </label>
-  <label>
-    Email:
-    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-  </label>
-  <label>
-    Mensagem:
-    <textarea name="message" value={formData.message} onChange={handleChange} required />
-  </label>
-  <button type="submit">Enviar</button>
-</form>
-  );
-};
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
@@ -109,7 +90,22 @@ const ContactForm = () => {
           </div>
           <div className="lg:w-2/3">
             <div className="glass-card rounded-xl p-8">
-              <FormComponent />
+              <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                <input type="hidden" name="form-name" value="contact" />
+                <label>
+                  Nome:
+                  <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+                </label>
+                <label>
+                  Email:
+                  <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                </label>
+                <label>
+                  Mensagem:
+                  <textarea name="message" value={formData.message} onChange={handleChange} required />
+                </label>
+                <button type="submit">Enviar</button>
+              </form>
             </div>
           </div>
         </div>
