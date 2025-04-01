@@ -81,8 +81,10 @@ const ContactForm = () => {
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-white font-medium mb-1">WhatsApp</h4>
-                      <p className="text-gray-400">(11) 9 3050-0397</p>
+                      <h4 className="text-white font-medium mb-1">WhatsApp(Clique para iniciar Chat)</h4>
+                      <a href="https://api.whatsapp.com/send/?phone=5511930500397&text=Olá vim do site, gostaria agendar uma consultoria personalizada para o meu negócio" target="_blank" rel="noopener noreferrer">
+  <p className="text-gray-400 hover:underline">(11) 9 3050-0397</p>
+</a>
                     </div>
                   </div>
                   
@@ -118,10 +120,10 @@ const ContactForm = () => {
 
                   {/* Social Media Links */}
                   <div className="flex justify-start space-x-4 mt-6">
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/ajudo_seu_negocio" target="_blank" rel="noopener noreferrer">
                       <Instagram className="w-8 h-8 text-primary hover:text-white transition-colors" />
                     </a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/ajudoseunegocio" target="_blank" rel="noopener noreferrer">
                       <Facebook className="w-8 h-8 text-primary hover:text-white transition-colors" />
                     </a>
                   </div>
@@ -159,8 +161,18 @@ const ContactForm = () => {
                 </div>
 
                 <div>
+                  <label className="text-white block text-sm font-medium mb-2" htmlFor="phone">Telefone</label>
+                  <input type="tel" name="phone" id="phone" required  className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Seu telefone" onChange={handleChange} />
+                </div>
+
+                <div>
+                  <label className="text-white block text-sm font-medium mb-2" htmlFor="company">Nome da Empresa</label>
+                  <input type="text" name="company" id="company" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Nome do seu Negócio, empresa ou marca" onChange={handleChange} />
+                </div>
+
+                <div>
                   <label className="text-white block text-sm font-medium mb-2" htmlFor="message">Mensagem</label>
-                  <textarea name="message" id="message" required rows={4} className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Escreva sua mensagem" onChange={handleChange}></textarea>
+                  <textarea name="message" id="message" required rows={4} className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Nos conte sobre seu negócio e o tipo de ajuda que precisa" onChange={handleChange}></textarea>
                 </div>
 
                 <button type="submit" className="w-full py-3 px-6 bg-primary text-white rounded-full hover:bg-primary/80 transition-colors flex items-center justify-center">
