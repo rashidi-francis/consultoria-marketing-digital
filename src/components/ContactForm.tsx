@@ -149,6 +149,8 @@ const ContactForm = () => {
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="bot-field" />
+                <input type="hidden" name="phone" value={formData.phone} />
+
 
                 <div>
                   <label className="text-white block text-sm font-medium mb-2" htmlFor="name">Nome</label>
