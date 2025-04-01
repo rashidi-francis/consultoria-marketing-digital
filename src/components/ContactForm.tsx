@@ -170,9 +170,9 @@ const ContactForm = () => {
                 </div>
 
                 <div>
-                  <label className="text-white block text-sm font-medium mb-2" htmlFor="phone">Celular</label>
-                  <input type="tel" name="phone" id="phone" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Celular com DDD e que tenha whatsapp de preferência" onChange={handleChange} />
-                </div>
+                  <label className="text-white block text-sm font-medium mb-2" htmlFor="name">Celular</label>
+                  <input type="text" name="name" id="name" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Celular com DDD e que tenha whatsapp de preferência" onChange={handleChange} />
+                </div>              
 
                 <div>
                   <label className="text-white block text-sm font-medium mb-2" htmlFor="company">Nome da Empresa</label>
