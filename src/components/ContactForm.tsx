@@ -29,17 +29,23 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Form submission for Netlify
+  
+    console.log("Dados enviados:", formData); // Teste para ver se o telefone aparece
+  
     const formElement = e.target as HTMLFormElement;
-    const formData = new FormData(formElement);
-
+    const formDataEntries = new FormData(formElement);
+  
+    // Verifica se os dados estão sendo enviados corretamente
+    for (const [key, value] of formDataEntries.entries()) {
+      console.log(`${key}: ${value}`);
+    }
+  
     try {
       const response = await fetch("/", {
         method: "POST",
-        body: formData,
+        body: formDataEntries,
       });
-
+  
       if (response.ok) {
         setFormSubmitted(true);
       } else {
@@ -49,6 +55,7 @@ const ContactForm = () => {
       console.error("Erro ao enviar formulário", error);
     }
   };
+  
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
