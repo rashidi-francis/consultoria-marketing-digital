@@ -8,5 +8,6 @@ Allow: /7-maneiras-bombar-live-youtube
 Allow: /como-ganhar-mais-visualizacoes-na-live-youtube
 Allow: /guia-lives-youtube-convertem
 Allow: /vale-a-pena-live-youtube-2025
+Allow: /guia-crescer-na-twitch
 
 
