@@ -11,5 +11,7 @@ Allow: /vale-a-pena-live-youtube-2025
 Allow: /guia-crescer-na-twitch
 Allow: /checklist-live-youtube
 Allow: /afiliacao-twitch-7-dias
+Allow: /manter-100-pessoas-live-youtube-sem-ads
+Allow: /manual-bombar-lives-twitch
 
 
