@@ -13,5 +13,6 @@ Allow: /checklist-live-youtube
 Allow: /afiliacao-twitch-7-dias
 Allow: /manter-100-pessoas-live-youtube-sem-ads
 Allow: /manual-bombar-lives-twitch
+Allow: /erros-live-youtube
 
 
