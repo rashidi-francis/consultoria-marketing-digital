@@ -15,5 +15,7 @@ Allow: /manter-100-pessoas-live-youtube-sem-ads
 Allow: /manual-bombar-lives-twitch
 Allow: /erros-live-youtube
 Allow: /viralizar-na-twitch
+Allow: /lives-youtube-nao-engajam
+
 
 
