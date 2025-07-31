@@ -16,6 +16,7 @@ Allow: /manual-bombar-lives-twitch
 Allow: /erros-live-youtube
 Allow: /viralizar-na-twitch
 Allow: /lives-youtube-nao-engajam
+Allow: /viver-de-twitch-2025
 
 
 
