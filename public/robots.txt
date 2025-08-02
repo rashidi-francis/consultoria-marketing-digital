@@ -17,6 +17,7 @@ Allow: /erros-live-youtube
 Allow: /viralizar-na-twitch
 Allow: /lives-youtube-nao-engajam
 Allow: /viver-de-twitch-2025
+Allow: /titulos-irresistiveis-lives-youtube
 
 
 
