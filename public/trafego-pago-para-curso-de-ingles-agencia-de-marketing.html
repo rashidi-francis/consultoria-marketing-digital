@@ -8,32 +8,228 @@
   <meta name="description" content="Tráfego Pago para Curso de Inglês — Especialistas em Meta Ads, Google Ads, TikTok Ads, Pinterest Ads e LinkedIn Ads. Cobramos 15% do investimento em mídia. Fale no WhatsApp para diagnóstico gratuito." />
   <link rel="canonical" href="https://ajudoseunegocio.com.br/trafego-pago-para-curso-de-ingles-agencia-de-marketing" />
   <style>
-    :root{--primary:#0b74de;--dark:#111827;--muted:#6b7280}
-    body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:#111827;line-height:1.6}
-    .container{max-width:980px;margin:28px auto;padding:20px}
-    header{display:flex;justify-content:space-between;align-items:center}
-    .brand{font-weight:700;font-size:18px}
-    h1{font-size:28px;margin:14px 0}
-    .lead{color:var(--muted);margin-bottom:18px}
-    .cta{background:var(--primary);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
-    .card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
-    table{width:100%;border-collapse:collapse;margin-top:8px}
-    th,td{padding:10px;border-bottom:1px solid #eef2f7;text-align:left}
-    th{background:#f8fafc;font-weight:700}
-    .price{font-size:18px;font-weight:700}
-    .small{font-size:13px;color:var(--muted)}
-    .whatsapp-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:14px;border-radius:999px;box-shadow:0 8px 24px rgba(16,24,40,0.2);text-decoration:none;font-weight:700}
-    footer{margin-top:28px;color:var(--muted);font-size:13px}
-    .bullet{margin:8px 0;padding-left:18px}
-    @media(max-width:900px){.grid{grid-template-columns:1fr;}.brand{font-size:15px}}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    
+    :root {
+      --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+      --dark-color: #0f172a;
+      --light-color: #f9fafb;
+      --muted-color: #94a3b8;
+      --accent-color: #22c55e;
+      --shadow-glow: rgba(59, 130, 246, 0.4);
+      --border-radius: 14px;
+      --transition-speed: 0.3s;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: var(--light-color);
+      color: var(--dark-color);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 24px 64px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e2e8f0;
+      animation: fadeInDown 1s ease forwards;
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 22px;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: default;
+    }
+
+    .cta {
+      background: var(--primary-gradient);
+      color: white;
+      padding: 12px 24px;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 8px 15px var(--shadow-glow);
+      transition: background var(--transition-speed), box-shadow var(--transition-speed);
+    }
+
+    .cta:hover {
+      background: #2563eb;
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.6);
+    }
+
+    main.grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    article.card, aside.card, .extra-content {
+      background: white;
+      border-radius: var(--border-radius);
+      box-shadow: 0 16px 32px rgba(99, 102, 241, 0.1);
+      padding: 28px 32px;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    article.card {
+      animation-delay: 0.2s;
+    }
+
+    aside.card {
+      animation-delay: 0.4s;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 18px;
+      font-weight: 700;
+      color: var(--dark-color);
+      line-height: 1.1;
+    }
+
+    h2 {
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      color: var(--primary-gradient);
+    }
+
+    ul.bullet {
+      list-style: inside disc;
+      color: var(--muted-color);
+      font-size: 1rem;
+      margin-left: 12px;
+      margin-bottom: 16px;
+    }
+
+    ul.bullet li {
+      margin-bottom: 10px;
+    }
+
+    p.lead {
+      font-size: 1.1rem;
+      color: var(--muted-color);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    p.small {
+      font-size: 0.85rem;
+      color: var(--muted-color);
+      margin-bottom: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      box-shadow: 0 8px 24px rgba(99, 102, 241, 0.07);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 16px;
+      background: white;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    th {
+      background: #eef2ff;
+      font-weight: 600;
+      color: var(--primary-gradient);
+    }
+
+    tbody tr:hover {
+      background: #f0f9ff;
+      transition: background var(--transition-speed);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 56px;
+      font-size: 0.9rem;
+      color: var(--muted-color);
+      padding-bottom: 32px;
+      animation: fadeInUp 1.2s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: white;
+      padding: 16px 20px;
+      font-weight: 700;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5);
+      transition: box-shadow 0.3s ease;
+      font-size: 1.1rem;
+      z-index: 1000;
+    }
+
+    .whatsapp-float:hover {
+      box-shadow: 0 16px 40px rgba(37, 211, 102, 0.9);
+    }
+
+    @media (max-width: 960px) {
+      main.grid {
+        grid-template-columns: 1fr;
+      }
+      aside.card {
+        margin-top: 32px;
+      }
+    }
+
+    @keyframes fadeInDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Tráfego Pago para Curso de Inglês - Agência de Marketing Digital",
-    "provider": {"@type":"Organization","name":"Agência de Marketing Digital"},
+    "provider": {"@type":"Organization","name":"Ajudo Seu Negócio"},
     "description":"Geramos matrículas e leads qualificados para cursos de inglês usando Meta Ads, Google Ads, TikTok Ads, Pinterest Ads e LinkedIn Ads. Cobrança de 15% sobre o investimento em mídia.",
     "areaServed": "BR",
     "serviceType": "Gestão de Tráfego Pago"
@@ -43,7 +239,7 @@
 <body>
   <div class="container">
     <header>
-      <div class="brand">Agência de Marketing Digital — Tráfego Pago</div>
+      <div class="brand">Ajudo Seu Negócio — Tráfego Pago</div>
       <a class="cta" href="https://wa.me/5511930500397" target="_blank" rel="noopener">Fale conosco no WhatsApp</a>
     </header>
 
@@ -90,7 +286,6 @@
 
           <h2>Por que contratar uma agência especializada?</h2>
           <p>Porque vendemos matrículas, não impressões. Nosso foco é entender o perfil dos seus alunos, criar mensagens que convertem e ajustar rapidamente o investimento conforme os resultados. Trabalhamos com públicos por interesse, lookalike e intenção de busca — e conectamos tráfego pago com landing pages orquestradas para aumentar suas inscrições.</p>
-
         </article>
 
         <aside class="card">
@@ -108,7 +303,7 @@
           <p class="small">Você recebe acesso aos relatórios das plataformas e às decisões orçamentárias. Nossa cobrança é clara: 15% do investimento em mídia + possíveis custos de produção (quando aplicável).</p>
         </aside>
 
-        <div class="card" style="margin-top:18px">
+        <div class="card extra-content" style="margin-top: 24px;">
           <h3>Conteúdo explicativo</h3>
           <p>Investir em tráfego pago para cursos de inglês exige foco em públicos diferentes: jovens buscando aprimoramento, profissionais que precisam do idioma para trabalho e pais buscando aulas para os filhos. Criamos jornadas separadas — anúncios que geram curiosidade no topo e ofertas claras no fundo de funil (aula experimental grátis, desconto para turma iniciante, certificado incluso) — e otimizamos para o evento que mais importa: matrícula.</p>
 
@@ -120,7 +315,6 @@
 
           <p>Pronto para escalar? Clique no WhatsApp e envie "DIAGNÓSTICO INGLÊS" — faremos uma análise prática do seu funil e apresentaremos um plano de mídia com estimativas reais de CPL e ROAS.</p>
         </div>
-
       </section>
     </main>
 
@@ -129,6 +323,6 @@
     </footer>
   </div>
 
-  <a class="whatsapp-float" href="https://wa.me/5511930500397" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="whatsapp-float" href="https://wa.me/5511930500397" target="_blank" rel="noopener" aria-label="WhatsApp Ajudo Seu Negócio">💬 WhatsApp</a>
 </body>
 </html>
