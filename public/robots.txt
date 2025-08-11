@@ -20,6 +20,7 @@ Allow: /viver-de-twitch-2025
 Allow: /titulos-irresistiveis-lives-youtube
 Allow: /live-youtube-caminho-para-monetizar
 Allow: /5-estrategias-secretas-twitch
+Allow: /trafego-pago-para-curso-de-ingles-agencia-de-marketing
 
 
 
