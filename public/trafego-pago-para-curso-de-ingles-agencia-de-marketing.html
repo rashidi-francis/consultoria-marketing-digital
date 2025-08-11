@@ -8,189 +8,142 @@
   <meta name="description" content="Tráfego Pago para Curso de Inglês — Especialistas em Meta Ads, Google Ads, TikTok Ads, Pinterest Ads e LinkedIn Ads. Cobramos 15% do investimento em mídia. Fale no WhatsApp para diagnóstico gratuito." />
   <link rel="canonical" href="https://ajudoseunegocio.com.br/trafego-pago-para-curso-de-ingles-agencia-de-marketing" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-    
-    :root {
-      --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
-      --dark-color: #0f172a;
-      --light-color: #f9fafb;
-      --muted-color: #94a3b8;
-      --accent-color: #22c55e;
-      --shadow-glow: rgba(59, 130, 246, 0.4);
-      --border-radius: 14px;
-      --transition-speed: 0.3s;
+    :root{
+      --primary:#0b74de;
+      --dark:#111827;
+      --muted:#6b7280;
+      --bg:#ffffff;
     }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: #f8fafc;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(90deg, #3b82f6, #06b6d4);
-            padding: 1.5rem 2rem;
-            text-align: center;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-        }
-        header h1 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        main {
-            max-width: 1200px;
-            margin: auto;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-        section {
-            background: rgba(255,255,255,0.05);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            animation: fadeInUp 0.8s ease-in-out;
-        }
-        h2 {
-            color: #38bdf8;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.1rem;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1.5rem;
-            background: rgba(0,0,0,0.2);
-        }
-        table th, table td {
-            padding: 1rem;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        table th {
-            background: rgba(59,130,246,0.3);
-        }
-        table td {
-            background: rgba(255,255,255,0.05);
-        }
-        .cta-btn {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 1rem 2rem;
-            background: linear-gradient(90deg, #3b82f6, #06b6d4);
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-        }
-        .cta-btn:hover {
-            transform: scale(1.05);
-            background: linear-gradient(90deg, #06b6d4, #3b82f6);
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-            color: #94a3b8;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        /* Responsividade */
-        @media (max-width: 1024px) {
-            main {
-                padding: 1.5rem;
-            }
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.6rem;
-            }
-            p, table th, table td {
-                font-size: 1rem;
-            }
-            .cta-btn {
-                width: 100%;
-                text-align: center;
-            }
-        }
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.4rem;
-            }
-            section {
-                padding: 1rem;
-            }
-            p {
-                font-size: 0.95rem;
-            }
-            table th, table td {
-                padding: 0.7rem;
-                font-size: 0.9rem;
-            }
-        }
+    body{
+      font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;
+      margin:0;
+      color:var(--dark);
+      background:var(--bg);
+      line-height:1.6;
     }
-
-    .whatsapp-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #25d366;
-      color: white;
-      padding: 16px 20px;
-      font-weight: 700;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5);
-      transition: box-shadow 0.3s ease;
-      font-size: 1.1rem;
-      z-index: 1000;
+    .container{
+      width:100%;
+      max-width:1200px;
+      margin:0 auto;
+      padding:20px;
     }
-
-    .whatsapp-float:hover {
-      box-shadow: 0 16px 40px rgba(37, 211, 102, 0.9);
+    header{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
     }
-
-    @media (max-width: 960px) {
-      main.grid {
-        grid-template-columns: 1fr;
-      }
-      aside.card {
-        margin-top: 32px;
+    .brand{
+      font-weight:700;
+      font-size:20px;
+    }
+    h1{
+      font-size:32px;
+      margin:14px 0;
+    }
+    .lead{
+      color:var(--muted);
+      margin-bottom:18px;
+      font-size:16px;
+    }
+    .cta{
+      background:var(--primary);
+      color:#fff;
+      padding:12px 18px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background 0.3s ease;
+    }
+    .cta:hover{
+      background:#095ab0;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:24px;
+      margin-top:20px;
+    }
+    .card{
+      background:#fff;
+      padding:18px;
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:8px;
+    }
+    th,td{
+      padding:10px;
+      border-bottom:1px solid #eef2f7;
+      text-align:left;
+    }
+    th{
+      background:#f8fafc;
+      font-weight:700;
+    }
+    .price{
+      font-size:18px;
+      font-weight:700;
+    }
+    .small{
+      font-size:14px;
+      color:var(--muted);
+    }
+    .whatsapp-float{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      background:#25D366;
+      color:#fff;
+      padding:14px 18px;
+      border-radius:999px;
+      box-shadow:0 8px 24px rgba(16,24,40,0.2);
+      text-decoration:none;
+      font-weight:700;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      z-index:999;
+    }
+    footer{
+      margin-top:28px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+    .bullet{
+      margin:8px 0;
+      padding-left:18px;
+    }
+    /* Responsividade */
+    @media(max-width:1024px){
+      .grid{
+        grid-template-columns:1fr;
       }
     }
-
-    @keyframes fadeInDown {
-      to {
-        opacity: 1;
-        transform: translateY(0);
+    @media(max-width:600px){
+      .brand{
+        font-size:16px;
+      }
+      h1{
+        font-size:24px;
+      }
+      .lead{
+        font-size:14px;
+      }
+      .cta{
+        padding:10px 14px;
+        font-size:14px;
+      }
+      .whatsapp-float{
+        padding:10px 14px;
+        font-size:14px;
       }
     }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    
   </style>
   <script type="application/ld+json">
   {
@@ -230,7 +183,7 @@
           <p class="small">Meta Ads (Facebook e Instagram), Google Ads (Search, Display e YouTube), TikTok Ads, Pinterest Ads, LinkedIn Ads e outras plataformas quando aplicável — escolhemos onde seu público está para maximizar resultados.</p>
 
           <h2>Exemplo de pacotes e custos</h2>
-          <p class="small">Trabalhamos com gestão + mídia. A agência cobra <strong>15% sobre o investimento em mídia</strong> (ex.: R$10.000 de mídia → R$1.500 de taxa de gestão). Abaixo exemplos de investimento mensal e taxa correspondente:</p>
+          <p class="small">Trabalhamos com gestão + mídia. A agência cobra <strong>15% sobre o investimento em mídia</strong>. Abaixo exemplos de investimento mensal e taxa correspondente:</p>
 
           <table aria-label="Tabela de preços">
             <thead>
@@ -271,26 +224,18 @@
           <p class="small">Você recebe acesso aos relatórios das plataformas e às decisões orçamentárias. Nossa cobrança é clara: 15% do investimento em mídia + possíveis custos de produção (quando aplicável).</p>
         </aside>
 
-        <div class="card extra-content" style="margin-top: 24px;">
+        <div class="card" style="margin-top:18px">
           <h3>Conteúdo explicativo</h3>
-          <p>Investir em tráfego pago para cursos de inglês exige foco em públicos diferentes: jovens buscando aprimoramento, profissionais que precisam do idioma para trabalho e pais buscando aulas para os filhos. Criamos jornadas separadas — anúncios que geram curiosidade no topo e ofertas claras no fundo de funil (aula experimental grátis, desconto para turma iniciante, certificado incluso) — e otimizamos para o evento que mais importa: matrícula.</p>
-
-          <p>Nossa experiência com Meta Ads e Google Ads garante que sua mensagem apareça na hora certa: no momento em que alguém pesquisa por "curso de inglês perto de mim" ou quando perfis semelhantes aos seus alunos atuais navegam nas redes sociais. TikTok e Pinterest ajudam a construir autoridade e gerar interesse visual; LinkedIn é indicado para cursos corporativos e treinamentos in-company.</p>
-
-          <p>Ao cobrar 15% do investimento, filtramos clientes que querem resultados reais — isso nos permite dedicar tempo a otimização e testes constantes. Trabalhamos com metas claras (ex.: CPL alvo, número de matrículas por semana) e transferimos conhecimento para sua equipe se desejar internalizar processos no futuro.</p>
-
-          <p>Se você tem aula experimental, webinar ou uma oferta sazonal, estruturamos campanhas temporais com criativos dedicados e remarketing para aumentar a taxa de conversão. Combinamos anúncios de vídeo, carrossel e search para cobrir toda a jornada do aluno.</p>
-
-          <p>Pronto para escalar? Clique no WhatsApp e envie "DIAGNÓSTICO INGLÊS" — faremos uma análise prática do seu funil e apresentaremos um plano de mídia com estimativas reais de CPL e ROAS.</p>
+          <p>Investir em tráfego pago para cursos de inglês exige foco em públicos diferentes: jovens buscando aprimoramento, profissionais que precisam do idioma para trabalho e pais buscando aulas para os filhos...</p>
         </div>
       </section>
     </main>
 
     <footer>
-      <p class="small">Observação: a taxa de agência é de 15% do valor do investimento em mídia. Resultados variam conforme público, produto, preço e oferta. Entre em contato para estimativa personalizada.</p>
+      <p class="small">Observação: a taxa de agência é de 15% do valor do investimento em mídia. Resultados variam conforme público, produto, preço e oferta.</p>
     </footer>
   </div>
 
-  <a class="whatsapp-float" href="https://wa.me/5511930500397" target="_blank" rel="noopener" aria-label="WhatsApp Ajudo Seu Negócio">💬 WhatsApp</a>
+  <a class="whatsapp-float" href="https://wa.me/5511930500397" target="_blank" rel="noopener">💬 WhatsApp</a>
 </body>
 </html>
