@@ -23,6 +23,7 @@ Allow: /5-estrategias-secretas-twitch
 Allow: /trafego-pago-para-curso-de-ingles-agencia-de-marketing
 Allow: /trafego-pago-para-fonoaudiologia-aparelhos-auditivos-agencia-de-marketing
 Allow: /como-aumentar-retencao-live-youtube
+Allow: /twitch-para-iniciantes
 
 
 
