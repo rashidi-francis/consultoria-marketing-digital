@@ -25,6 +25,7 @@ Allow: /trafego-pago-para-fonoaudiologia-aparelhos-auditivos-agencia-de-marketin
 Allow: /como-aumentar-retencao-live-youtube
 Allow: /twitch-para-iniciantes
 Allow: /trafego-pago-para-servicos-de-massagem-agencia-de-marketing
+Allow: /como-criar-expectativa-lotar-live-youtube
 
 
 
