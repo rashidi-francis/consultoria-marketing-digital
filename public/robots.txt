@@ -29,6 +29,7 @@ Allow: /como-criar-expectativa-lotar-live-youtube
 Allow: /twitch-0-a-100-espectadores
 Allow: /trafego-pago-para-lojas-de-joias-ourivesaria
 Allow: /melhor-horario-live-youtube
+Allow: /guia-twitch-crescer-sem-ser-famoso
 
 
 
