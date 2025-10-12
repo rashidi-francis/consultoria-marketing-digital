@@ -31,6 +31,7 @@ Allow: /trafego-pago-para-lojas-de-joias-ourivesaria
 Allow: /melhor-horario-live-youtube
 Allow: /guia-twitch-crescer-sem-ser-famoso
 Allow: /trafego-pago-para-lojas-de-camping-pesca-airsoft
+Allow: /ganhar-votos-enquete-instagram
 
 
 
