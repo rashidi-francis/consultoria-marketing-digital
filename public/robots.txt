@@ -34,7 +34,9 @@ Allow: /trafego-pago-para-lojas-de-camping-pesca-airsoft
 Allow: /ganhar-votos-enquete-instagram
 Allow: /dicas-enquetes-instagram-stories
 Allow: /planos-aceleracao-engajamento-enquetes
-Allow: /como-criar-enquetes-instagram-stories.html
+Allow: /como-criar-enquetes-instagram-stories
+Allow: /ideias-criativas-votos-stories-instagram
+
 
 
 
