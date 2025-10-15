@@ -36,6 +36,7 @@ Allow: /dicas-enquetes-instagram-stories
 Allow: /planos-aceleracao-engajamento-enquetes
 Allow: /como-criar-enquetes-instagram-stories
 Allow: /ideias-criativas-votos-stories-instagram
+Allow: /como-ganhar-mais-seguidores-instagram
 
 
 
