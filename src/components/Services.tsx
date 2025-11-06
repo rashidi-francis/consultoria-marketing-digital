@@ -1,49 +1,35 @@
 
 import { useEffect, useRef } from "react";
 import { 
-  Lightbulb, 
-  FileText, 
-  LineChart, 
-  FileEdit, 
-  Search, 
-  Mail 
+  Bot, 
+  Target, 
+  Share2, 
+  Monitor 
 } from "lucide-react";
 
 const services = [
   {
-    icon: Lightbulb,
-    title: "Consultoria Estratégica",
-    description: "Análise completa do seu negócio e desenvolvimento de estratégias personalizadas para alcançar seus objetivos.",
+    icon: Bot,
+    title: "Inteligência Artificial",
+    description: "Integração de IA em WhatsApp com conversa humanizada, atendimento inteligente em sites e automações que transformam a experiência do seu cliente.",
     color: "neon-blue"
   },
   {
-    icon: FileText,
-    title: "Plano de Negócios",
-    description: "Elaboração de planos detalhados para guiar seu crescimento com metas claras e ações definidas.",
+    icon: Target,
+    title: "Tráfego Pago",
+    description: "Campanhas de mídia paga estratégicas, branding e posicionamento para fortalecer sua marca e maximizar resultados com ROI otimizado.",
     color: "neon-purple"
   },
   {
-    icon: LineChart,
-    title: "Gestão de Tráfego Pago",
-    description: "Gerenciamento otimizado de campanhas pagas para maximizar seu ROI e alcançar seu público-alvo.",
+    icon: Share2,
+    title: "Social Media",
+    description: "Criação de posts para redes sociais, estratégias de SEO e produção de conteúdo relevante que engaja e converte sua audiência.",
     color: "neon-pink"
   },
   {
-    icon: FileEdit,
-    title: "Criação de Conteúdo",
-    description: "Produção de conteúdo relevante e engajador que ressoa com sua audiência e fortalece sua marca.",
-    color: "neon-red"
-  },
-  {
-    icon: Search,
-    title: "SEO e Estratégia de Conteúdo",
-    description: "Otimização para mecanismos de busca que aumenta sua visibilidade online e atrai tráfego qualificado.",
-    color: "neon-green"
-  },
-  {
-    icon: Mail,
-    title: "E-mail Marketing e Automação",
-    description: "Sequências de e-mails personalizadas e automações que nutrem leads e aumentam suas conversões.",
+    icon: Monitor,
+    title: "Web Designer",
+    description: "Construção de websites de alta tecnologia, leves e de última geração com efeitos tecnológicos que impressionam e convertem.",
     color: "neon-cyan"
   }
 ];
