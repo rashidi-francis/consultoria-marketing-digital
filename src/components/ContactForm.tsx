@@ -1,61 +1,16 @@
-import { useState } from "react";
 import { 
   Phone, 
   Mail, 
   MapPin, 
-  Send, 
   Clock,
   Instagram, 
-  Facebook
+  Facebook,
+  MessageCircle
 } from "lucide-react";
+import marketingTeam from "@/assets/marketing-team.jpg";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-  
-    console.log("Dados enviados:", formData); // Teste para ver se o telefone aparece
-  
-    const formElement = e.target as HTMLFormElement;
-    const formDataEntries = new FormData(formElement);
-  
-    // Verifica se os dados estão sendo enviados corretamente
-    for (const [key, value] of formDataEntries.entries()) {
-      console.log(`${key}: ${value}`);
-    }
-  
-    try {
-      const response = await fetch("/", {
-        method: "POST",
-        body: formDataEntries,
-      });
-  
-      if (response.ok) {
-        setFormSubmitted(true);
-      } else {
-        console.error("Erro ao enviar formulário", response);
-      }
-    } catch (error) {
-      console.error("Erro ao enviar formulário", error);
-    }
-  };
-  
+  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5511930500397&text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consultoria%20personalizada%20para%20o%20meu%20negócio";
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
@@ -75,23 +30,23 @@ const ContactForm = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Contact Info */}
-          <div className="lg:w-1/3">
+          <div className="lg:w-1/2">
             <div className="glass-card rounded-xl p-0.5 h-full">
               <div className="bg-card rounded-xl p-8 h-full">
                 <h3 className="text-2xl font-bold mb-6 text-white">Informações de Contato</h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-6 mb-8">
                   <div className="flex items-start">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-white font-medium mb-1">WhatsApp(Clique para iniciar Chat)</h4>
-                      <a href="https://api.whatsapp.com/send/?phone=5511930500397&text=Olá vim do site, gostaria agendar uma consultoria personalizada para o meu negócio" target="_blank" rel="noopener noreferrer">
-  <p className="text-gray-400 hover:underline">(11) 9 3050-0397</p>
-</a>
+                      <h4 className="text-white font-medium mb-1">WhatsApp (Clique para iniciar Chat)</h4>
+                      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                        <p className="text-gray-400 hover:underline">(11) 9 3050-0397</p>
+                      </a>
                     </div>
                   </div>
                   
@@ -134,61 +89,32 @@ const ContactForm = () => {
                       <Facebook className="w-8 h-8 text-primary hover:text-white transition-colors" />
                     </a>
                   </div>
-
                 </div>
+
+                {/* WhatsApp CTA Button */}
+                <a 
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-4 px-6 bg-green-500 hover:bg-green-600 text-white rounded-full transition-colors flex items-center justify-center gap-3 font-semibold text-lg shadow-lg"
+                >
+                  <MessageCircle className="w-6 h-6" />
+                  Falar no WhatsApp
+                </a>
               </div>
             </div>
           </div>
           
-          {/* Form Section */}
-          <div className="lg:w-2/3">
-            {formSubmitted ? (
-              <div className="text-center">
-                <h3 className="text-2xl text-white mb-4">Obrigado pelo seu contato!</h3>
-                <p className="text-gray-400">Responderemos o mais breve possível.</p>
-              </div>
-            ) : (
-              <form 
-                onSubmit={handleSubmit} 
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                className="space-y-6"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="phone" value={formData.phone} />
-
-
-                <div>
-                  <label className="text-white block text-sm font-medium mb-2" htmlFor="name">Nome</label>
-                  <input type="text" name="name" id="name" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Seu nome" onChange={handleChange} />
-                </div>
-
-                <div>
-                  <label className="text-white block text-sm font-medium mb-2" htmlFor="email">Email</label>
-                  <input type="email" name="email" id="email" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Seu e-mail" onChange={handleChange} />
-                </div>
-
-                <div>
-                  <label className="text-white block text-sm font-medium mb-2" htmlFor="name">Celular</label>
-                  <input type="text" name="name" id="name" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Celular com DDD e que tenha whatsapp de preferência" onChange={handleChange} />
-                </div>              
-
-                <div>
-                  <label className="text-white block text-sm font-medium mb-2" htmlFor="company">Nome da Empresa</label>
-                  <input type="text" name="company" id="company" required className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Nome do seu Negócio, empresa ou marca" onChange={handleChange} />
-                </div>
-
-                <div>
-                  <label className="text-white block text-sm font-medium mb-2" htmlFor="message">Mensagem</label>
-                  <textarea name="message" id="message" required rows={4} className="w-full bg-gray-800 border border-gray-600 text-white rounded-md p-4" placeholder="Nos conte sobre seu negócio e o tipo de ajuda que precisa" onChange={handleChange}></textarea>
-                </div>
-
-                <button type="submit" className="w-full py-3 px-6 bg-primary text-white rounded-full hover:bg-primary/80 transition-colors flex items-center justify-center">
-                  Enviar <Send className="ml-3" />
-                </button>
-              </form>
-            )}
+          {/* Image Section */}
+          <div className="lg:w-1/2">
+            <div className="relative rounded-xl overflow-hidden">
+              <img 
+                src={marketingTeam} 
+                alt="Equipe de marketing digital trabalhando" 
+                className="w-full h-full object-cover rounded-xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+            </div>
           </div>
         </div>
       </div>
