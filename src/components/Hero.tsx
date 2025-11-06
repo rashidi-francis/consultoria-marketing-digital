@@ -45,13 +45,13 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
             <div className="inline-block px-4 py-1 rounded-full border border-primary/30 bg-primary/5 text-sm font-medium text-primary animate-fade-in">
-              Consultoria de Marketing Digital
+              Agência de Marketing Digital
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in" style={{animationDelay: '0.2s'}}>
-              <span className="text-white">Impulsione seu negócio com </span>
+              <span className="text-white">Inteligência Artificial e </span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink animate-border-flow">
-                estratégias inteligentes!
+                estratégias mkt inteligentes!
               </span>
             </h1>
             
