@@ -6,7 +6,7 @@ import {
   Share2, 
   Monitor,
   Palette,
-  Sparkles
+  Laptop
 } from "lucide-react";
 
 const services = [
@@ -41,9 +41,9 @@ const services = [
     color: "neon-red"
   },
   {
-    icon: Sparkles,
-    title: "Serviço Customizado",
-    description: "Freelancer sob medida para projetos especiais. Soluções personalizadas desenvolvidas de acordo com suas necessidades específicas. Consulte serviço e preço.",
+    icon: Laptop,
+    title: "Instalação de Windows",
+    description: "Formatação completa de notebooks com instalação de sistema operacional do zero, limpeza e otimização total. Renovamos o desempenho do seu equipamento. Serviço válido apenas para notebooks.",
     color: "neon-green"
   }
 ];
