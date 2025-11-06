@@ -4,7 +4,9 @@ import {
   Bot, 
   Target, 
   Share2, 
-  Monitor 
+  Monitor,
+  Palette,
+  Sparkles
 } from "lucide-react";
 
 const services = [
@@ -31,6 +33,18 @@ const services = [
     title: "Web Designer",
     description: "Construção de websites de alta tecnologia, leves e de última geração com efeitos tecnológicos que impressionam e convertem.",
     color: "neon-cyan"
+  },
+  {
+    icon: Palette,
+    title: "Identidade Visual",
+    description: "Criação de logotipos marcantes, identidade visual completa e papelaria personalizada que traduz a essência da sua marca.",
+    color: "neon-red"
+  },
+  {
+    icon: Sparkles,
+    title: "Serviço Customizado",
+    description: "Freelancer sob medida para projetos especiais. Soluções personalizadas desenvolvidas de acordo com suas necessidades específicas. Consulte serviço e preço.",
+    color: "neon-green"
   }
 ];
 
