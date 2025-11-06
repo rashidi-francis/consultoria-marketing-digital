@@ -51,7 +51,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in" style={{animationDelay: '0.2s'}}>
               <span className="text-white">Inteligência Artificial e </span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink animate-border-flow">
-                estratégias mkt inteligentes!
+                estratégias de marketing
               </span>
             </h1>
             
