@@ -1,16 +1,14 @@
 
 import { useEffect, useRef } from "react";
 
-// Mock partner logos (these would be replaced with actual partner logos)
+// Real client logos and text-based partners
 const partners = [
-  { name: "TechCorp", logo: "https://via.placeholder.com/150x60/0d1117/00f3ff?text=TechCorp" },
-  { name: "Innovate Inc", logo: "https://via.placeholder.com/150x60/0d1117/9b00ff?text=Innovate" },
-  { name: "FutureWorks", logo: "https://via.placeholder.com/150x60/0d1117/ff00f7?text=FutureWorks" },
-  { name: "Digital Masters", logo: "https://via.placeholder.com/150x60/0d1117/00f3ff?text=Digital" },
-  { name: "WebPros", logo: "https://via.placeholder.com/150x60/0d1117/9b00ff?text=WebPros" },
-  { name: "CreativeStudio", logo: "https://via.placeholder.com/150x60/0d1117/ff00f7?text=Creative" },
-  { name: "CloudTech", logo: "https://via.placeholder.com/150x60/0d1117/00f3ff?text=CloudTech" },
-  { name: "DataFlow", logo: "https://via.placeholder.com/150x60/0d1117/9b00ff?text=DataFlow" },
+  { name: "JetLog Importação", logo: "https://via.placeholder.com/150x60/0d1117/00f3ff?text=JetLog" },
+  { name: "Bope Airsoft", logo: "https://via.placeholder.com/150x60/0d1117/9b00ff?text=Bope+Airsoft" },
+  { name: "Marketshop.com.br", logo: "https://via.placeholder.com/150x60/0d1117/ff00f7?text=Marketshop" },
+  { name: "Marketshop Cred", logo: "https://via.placeholder.com/150x60/0d1117/00f3ff?text=MS+Cred" },
+  { name: "Planeta das Estampas", logo: "https://via.placeholder.com/150x60/0d1117/9b00ff?text=Planeta+Estampas" },
+  { name: "inglesdogringo.com.br", textOnly: true },
 ];
 
 const Partners = () => {
@@ -51,13 +49,19 @@ const Partners = () => {
           {partners.map((partner, index) => (
             <div 
               key={`marquee1-${index}`} 
-              className="group relative flex items-center justify-center h-16 px-6 glass-card rounded-lg mx-2"
+              className="group relative flex items-center justify-center h-16 px-6 glass-card rounded-lg mx-2 min-w-[150px]"
             >
-              <img 
-                src={partner.logo} 
-                alt={partner.name} 
-                className="max-h-10 max-w-[130px] opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
-              />
+              {partner.textOnly ? (
+                <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green">
+                  {partner.name}
+                </span>
+              ) : (
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name} 
+                  className="max-h-10 max-w-[130px] opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
+                />
+              )}
               <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-primary/30"></div>
             </div>
           ))}
@@ -74,13 +78,19 @@ const Partners = () => {
           {[...partners].reverse().map((partner, index) => (
             <div 
               key={`marquee2-${index}`} 
-              className="group relative flex items-center justify-center h-16 px-6 glass-card rounded-lg mx-2"
+              className="group relative flex items-center justify-center h-16 px-6 glass-card rounded-lg mx-2 min-w-[150px]"
             >
-              <img 
-                src={partner.logo} 
-                alt={partner.name} 
-                className="max-h-10 max-w-[130px] opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
-              />
+              {partner.textOnly ? (
+                <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green">
+                  {partner.name}
+                </span>
+              ) : (
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name} 
+                  className="max-h-10 max-w-[130px] opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
+                />
+              )}
               <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-primary/30"></div>
             </div>
           ))}
