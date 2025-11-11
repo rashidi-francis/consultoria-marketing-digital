@@ -18,49 +18,37 @@ const services = [
     icon: Bot,
     title: "Inteligência Artificial",
     description: "Integração de IA em WhatsApp com conversa humanizada, atendimento inteligente em sites e automações que transformam a experiência do seu cliente.",
-    color: "neon-blue",
-    buttonText: "Quero IA no meu WhatsApp",
-    whatsappMessage: "Olá, vim do site, gostaria de informações sobre o serviço de Inteligência Artificial para WhatsApp"
+    color: "neon-blue"
   },
   {
     icon: Target,
     title: "Tráfego Pago",
     description: "Campanhas de mídia paga estratégicas, branding e posicionamento para fortalecer sua marca e maximizar resultados com ROI otimizado.",
-    color: "neon-purple",
-    buttonText: "Preciso de Tráfego Pago",
-    whatsappMessage: "Olá, vim do site, gostaria de informações sobre o serviço de Tráfego Pago"
+    color: "neon-purple"
   },
   {
     icon: Share2,
     title: "Social Media",
     description: "Criação de posts para redes sociais, estratégias de SEO e produção de conteúdo relevante que engaja e converte sua audiência.",
-    color: "neon-pink",
-    buttonText: "Quero Gestão de Redes Sociais",
-    whatsappMessage: "Olá, vim do site, gostaria de informações sobre o serviço de Social Media"
+    color: "neon-pink"
   },
   {
     icon: Monitor,
     title: "Web Designer",
     description: "Construção de websites de alta tecnologia, leves e de última geração com efeitos tecnológicos que impressionam e convertem.",
-    color: "neon-cyan",
-    buttonText: "Preciso de um Site Moderno",
-    whatsappMessage: "Olá, vim do site, gostaria de informações sobre o serviço de Web Designer"
+    color: "neon-cyan"
   },
   {
     icon: Palette,
     title: "Identidade Visual",
     description: "Criação de logotipos marcantes, identidade visual completa e papelaria personalizada que traduz a essência da sua marca.",
-    color: "neon-red",
-    buttonText: "Quero Logotipo e Papelaria",
-    whatsappMessage: "Olá, vim do site, gostaria de informações sobre o serviço de Identidade Visual"
+    color: "neon-red"
   },
   {
     icon: Laptop,
     title: "Instalação de Windows",
     description: "Formatação completa de notebooks com instalação de sistema operacional do zero, limpeza e otimização total. Renovamos o desempenho do seu equipamento. Serviço válido apenas para notebooks.",
-    color: "neon-green",
-    buttonText: "Preciso Formatar meu Notebook",
-    whatsappMessage: "Olá, vim do site, gostaria de informações sobre o serviço de Instalação de Windows"
+    color: "neon-green"
   }
 ];
 
@@ -86,14 +74,24 @@ const ServiceCard = ({ service, index }: { service: typeof services[0], index: n
         </p>
         <div className="mt-6 pt-4 border-t border-white/10">
           <a 
-            href={`https://wa.me/5511930500397?text=${encodeURIComponent(service.whatsappMessage)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-gradient-to-r from-${service.color}/20 to-${service.color}/10 border border-${service.color}/30 text-${service.color} font-semibold text-sm transition-all duration-300 hover:from-${service.color}/30 hover:to-${service.color}/20 hover:border-${service.color}/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.3)] animate-pulse hover:animate-none group-hover:scale-105`}
+            href="#contact" 
+            className="text-primary text-sm flex items-center transition-all duration-300 group-hover:text-glow-blue"
           >
-            <Sparkles className="w-4 h-4" />
-            {service.buttonText}
-            <Zap className="w-4 h-4" />
+            Saiba mais
+            <svg 
+              className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                d="M5 12H19M19 12L12 5M19 12L12 19" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              />
+            </svg>
           </a>
         </div>
       </div>
@@ -210,9 +208,7 @@ const Services = () => {
                 </div>
                 
                 <a 
-                  href={`https://wa.me/5511930500397?text=${encodeURIComponent("Olá, vim do site, gostaria de informações sobre o serviço de IA conversacional para WhatsApp")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#contact" 
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold hover:shadow-[0_0_30px_rgba(0,243,255,0.5)] transition-all duration-300 group"
                 >
                   Quero IA no meu WhatsApp
