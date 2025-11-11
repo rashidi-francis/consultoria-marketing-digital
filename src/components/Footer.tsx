@@ -186,7 +186,15 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {currentYear} Ajudo Seu Negócio. Todos os direitos reservados.
+            Todos os Direitos Reservados Ajudo Seu Negócio © Desenvolvido por{" "}
+            <a 
+              href="https://ajudoseunegocio.com.br" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-primary hover:text-primary/80 transition-colors"
+            >
+              ajudoseunegocio.com.br
+            </a>
           </p>
           
           <div className="flex space-x-6">
