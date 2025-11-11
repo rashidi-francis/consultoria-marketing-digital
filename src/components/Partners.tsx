@@ -10,6 +10,7 @@ const partners = [
   { name: "planetadasestampas.com.br" },
   { name: "inglesdogringo.com.br" },
   { name: "realtysaopaulo.com.br" },
+  { name: "sousmart.com.br" },
 ];
 
 const Partners = () => {
@@ -50,9 +51,9 @@ const Partners = () => {
           {partners.map((partner, index) => (
             <div 
               key={`marquee1-${index}`} 
-              className="group relative flex items-center justify-center h-16 px-6 glass-card rounded-lg mx-2 min-w-[150px]"
+              className="group relative flex items-center justify-center h-16 px-8 glass-card rounded-lg mx-4 min-w-[220px]"
             >
-              <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green">
+              <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green whitespace-nowrap">
                 {partner.name}
               </span>
               <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-primary/30"></div>
@@ -71,9 +72,9 @@ const Partners = () => {
           {[...partners].reverse().map((partner, index) => (
             <div 
               key={`marquee2-${index}`} 
-              className="group relative flex items-center justify-center h-16 px-6 glass-card rounded-lg mx-2 min-w-[150px]"
+              className="group relative flex items-center justify-center h-16 px-8 glass-card rounded-lg mx-4 min-w-[220px]"
             >
-              <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green">
+              <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green whitespace-nowrap">
                 {partner.name}
               </span>
               <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-primary/30"></div>
