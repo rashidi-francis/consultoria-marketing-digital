@@ -51,7 +51,7 @@ const services = [
     title: "Identidade Visual",
     description: "Criação de logotipos marcantes, identidade visual completa e papelaria personalizada que traduz a essência da sua marca.",
     color: "neon-red",
-    buttonText: "Quero uma Identidade Visual",
+    buttonText: "Quero Logotipo e Papelaria",
     whatsappMessage: "Olá, vim do site, gostaria de informações sobre o serviço de Identidade Visual"
   },
   {
