@@ -6,8 +6,12 @@ import {
   Share2, 
   Monitor,
   Palette,
-  Laptop
+  Laptop,
+  MessageCircle,
+  Sparkles,
+  Zap
 } from "lucide-react";
+import whatsappMessages from "@/assets/whatsapp-messages.jpg";
 
 const services = [
   {
@@ -151,6 +155,86 @@ const Services = () => {
           <p className="text-gray-300">
             Oferecemos um conjunto abrangente de serviços de marketing digital para ajudar sua empresa a crescer e se destacar no cenário online.
           </p>
+        </div>
+
+        {/* AI WhatsApp Banner */}
+        <div className="mb-16 relative overflow-hidden rounded-3xl glass-card p-1">
+          {/* Animated Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/20 via-neon-purple/20 to-neon-pink/20 animate-gradient-flow"></div>
+          
+          {/* Floating Tech Elements */}
+          <div className="absolute top-10 left-10 w-12 h-12 rounded-lg bg-neon-blue/30 animate-float blur-sm" style={{animationDelay: '0s'}}></div>
+          <div className="absolute top-20 right-20 w-16 h-16 rounded-full bg-neon-purple/30 animate-float blur-sm" style={{animationDelay: '0.5s'}}></div>
+          <div className="absolute bottom-10 left-1/4 w-10 h-10 rounded-lg bg-neon-pink/30 animate-float blur-sm" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-20 right-1/3 w-14 h-14 rounded-full bg-neon-cyan/30 animate-float blur-sm" style={{animationDelay: '1.5s'}}></div>
+          
+          {/* Floating Icons */}
+          <div className="absolute top-16 right-32 animate-float" style={{animationDelay: '0.3s'}}>
+            <Sparkles className="w-6 h-6 text-neon-blue opacity-60" />
+          </div>
+          <div className="absolute bottom-24 left-32 animate-float" style={{animationDelay: '0.8s'}}>
+            <Zap className="w-8 h-8 text-neon-purple opacity-60" />
+          </div>
+          <div className="absolute top-1/2 right-16 animate-float" style={{animationDelay: '1.2s'}}>
+            <Bot className="w-7 h-7 text-neon-pink opacity-60" />
+          </div>
+          
+          <div className="relative bg-card/80 backdrop-blur-xl rounded-3xl p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Left Content */}
+              <div className="space-y-6 relative z-10">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-blue/10 border border-neon-blue/30">
+                  <MessageCircle className="w-5 h-5 text-neon-blue animate-pulse" />
+                  <span className="text-sm font-semibold text-neon-blue">IA Conversacional para WhatsApp</span>
+                </div>
+                
+                <h3 className="text-3xl md:text-4xl font-bold leading-tight">
+                  <span className="text-white">Enquanto você dorme...</span>
+                  <br />
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink animate-border-flow">
+                    alguém ainda está perguntando pelo seu produto
+                  </span>
+                </h3>
+                
+                <div className="space-y-4 text-lg">
+                  <p className="text-gray-300 flex items-start gap-3">
+                    <span className="w-2 h-2 rounded-full bg-neon-blue mt-2 animate-pulse"></span>
+                    <span>Enquanto você dorme, <span className="text-neon-purple font-semibold">nossa IA trabalha</span></span>
+                  </p>
+                  <p className="text-gray-300 flex items-start gap-3">
+                    <span className="w-2 h-2 rounded-full bg-neon-purple mt-2 animate-pulse" style={{animationDelay: '0.5s'}}></span>
+                    <span>Enquanto você vive, <span className="text-neon-pink font-semibold">nossa IA está atendendo e vendendo pra você</span></span>
+                  </p>
+                </div>
+                
+                <a 
+                  href="#contact" 
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold hover:shadow-[0_0_30px_rgba(0,243,255,0.5)] transition-all duration-300 group"
+                >
+                  Quero IA no meu WhatsApp
+                  <Bot className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                </a>
+              </div>
+              
+              {/* Right Image */}
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/30 to-neon-purple/30 rounded-2xl blur-2xl animate-glow"></div>
+                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                  <img 
+                    src={whatsappMessages} 
+                    alt="WhatsApp recebendo mensagens de clientes"
+                    className="w-full h-auto object-cover"
+                  />
+                  
+                  {/* Overlay indicators */}
+                  <div className="absolute top-4 right-4 flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/90 backdrop-blur-sm animate-pulse">
+                    <div className="w-2 h-2 rounded-full bg-white"></div>
+                    <span className="text-white text-sm font-semibold">24+ mensagens não lidas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
