@@ -42,7 +42,8 @@ const services = [
     icon: Palette,
     title: "Identidade Visual",
     description: "Criação de logotipos marcantes, identidade visual completa e papelaria personalizada que traduz a essência da sua marca.",
-    color: "neon-red"
+    color: "neon-red",
+    buttonText: "Quero Logotipo e Papelaria"
   },
   {
     icon: Laptop,

@@ -59,19 +59,36 @@ const Hero = () => {
               Transforme sua presença digital e aumente seus resultados com soluções personalizadas de marketing que realmente funcionam.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 items-center justify-center md:justify-start animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <div className="flex flex-wrap gap-3 pt-6 items-center justify-center md:justify-start animate-fade-in" style={{animationDelay: '0.6s'}}>
               <a 
                 href="#contact" 
-                className="neo-btn flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-black font-semibold hover:bg-primary/90 group w-full sm:w-auto"
+                className="neo-btn flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-primary text-black text-sm font-semibold hover:bg-primary/90 group"
               >
-                Agendar Consultoria
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                Inteligência Artificial
               </a>
               <a 
-                href="#services" 
-                className="px-6 py-3 rounded-lg border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
+                href="#contact" 
+                className="px-5 py-2.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 text-sm font-medium"
               >
-                Conheça Nossos Serviços
+                Tráfego Pago
+              </a>
+              <a 
+                href="#contact" 
+                className="px-5 py-2.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 text-sm font-medium"
+              >
+                Social Media
+              </a>
+              <a 
+                href="#contact" 
+                className="px-5 py-2.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 text-sm font-medium"
+              >
+                Web Designer
+              </a>
+              <a 
+                href="#contact" 
+                className="px-5 py-2.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 text-sm font-medium"
+              >
+                Quero Logotipo e Papelaria
               </a>
             </div>
           </div>
