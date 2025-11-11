@@ -1,14 +1,15 @@
 
 import { useEffect, useRef } from "react";
 
-// Real client logos and text-based partners
+// Client partners - text only
 const partners = [
-  { name: "JetLog Importação", logo: "https://via.placeholder.com/150x60/0d1117/00f3ff?text=JetLog" },
-  { name: "Bope Airsoft", logo: "https://via.placeholder.com/150x60/0d1117/9b00ff?text=Bope+Airsoft" },
-  { name: "Marketshop.com.br", logo: "https://via.placeholder.com/150x60/0d1117/ff00f7?text=Marketshop" },
-  { name: "Marketshop Cred", logo: "https://via.placeholder.com/150x60/0d1117/00f3ff?text=MS+Cred" },
-  { name: "Planeta das Estampas", logo: "https://via.placeholder.com/150x60/0d1117/9b00ff?text=Planeta+Estampas" },
-  { name: "inglesdogringo.com.br", textOnly: true },
+  { name: "jetlog.com.br" },
+  { name: "marketshop.com.br" },
+  { name: "@brasilgunsairsoft" },
+  { name: "limpanome.marketshop.com.br" },
+  { name: "planetadasestampas.com.br" },
+  { name: "inglesdogringo.com.br" },
+  { name: "realtysaopaulo.com.br" },
 ];
 
 const Partners = () => {
@@ -51,17 +52,9 @@ const Partners = () => {
               key={`marquee1-${index}`} 
               className="group relative flex items-center justify-center h-16 px-6 glass-card rounded-lg mx-2 min-w-[150px]"
             >
-              {partner.textOnly ? (
-                <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green">
-                  {partner.name}
-                </span>
-              ) : (
-                <img 
-                  src={partner.logo} 
-                  alt={partner.name} 
-                  className="max-h-10 max-w-[130px] opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
-                />
-              )}
+              <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green">
+                {partner.name}
+              </span>
               <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-primary/30"></div>
             </div>
           ))}
@@ -80,17 +73,9 @@ const Partners = () => {
               key={`marquee2-${index}`} 
               className="group relative flex items-center justify-center h-16 px-6 glass-card rounded-lg mx-2 min-w-[150px]"
             >
-              {partner.textOnly ? (
-                <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green">
-                  {partner.name}
-                </span>
-              ) : (
-                <img 
-                  src={partner.logo} 
-                  alt={partner.name} 
-                  className="max-h-10 max-w-[130px] opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
-                />
-              )}
+              <span className="text-sm font-medium opacity-70 group-hover:opacity-100 transition-opacity duration-300 bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green">
+                {partner.name}
+              </span>
               <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 border border-primary/30"></div>
             </div>
           ))}
