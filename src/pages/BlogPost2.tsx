@@ -110,7 +110,7 @@ const BlogPost2 = () => {
                   className="neo-btn"
                 >
                   <a 
-                    href={`https://wa.me/5511912345678?text=${whatsappMessage}`}
+                    href={`https://wa.me/5511930500397?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
