@@ -65,7 +65,7 @@ const services = [
 ];
 
 const ServiceCard = ({ service, index }: { service: typeof services[0], index: number }) => {
-  const cardId = service.title === "Tráfego Pago" ? "trafego-pago" : undefined;
+  const cardId = service.title === "Tráfego Pago" ? "trafego-pago" : service.title === "Social Media" ? "social-media" : undefined;
   
   return (
     <div 
