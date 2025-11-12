@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import blogSeoImage from "@/assets/blog-seo-strategies.jpg";
 import blogFacebookImage from "@/assets/blog-facebook-ads.jpg";
 import blogAutomationImage from "@/assets/blog-marketing-automation.jpg";
@@ -8,6 +9,7 @@ import authorAvatar from "@/assets/nathalia-avatar.jpg";
 const blogPosts = [
   {
     id: 1,
+    slug: "7-estrategias-seo-pequenas-empresas",
     title: "7 Estratégias de SEO para Pequenas Empresas em 2023",
     excerpt: "Descubra as melhores práticas de SEO que podem ajudar seu negócio a se destacar nos resultados de busca sem precisar de um grande orçamento.",
     image: blogSeoImage,
@@ -19,6 +21,7 @@ const blogPosts = [
   },
   {
     id: 2,
+    slug: "anuncios-facebook-que-convertem",
     title: "Como Criar Anúncios que Realmente Convertem no Facebook",
     excerpt: "Aprenda as técnicas comprovadas para criar anúncios no Facebook que não apenas geram cliques, mas também convertem visitantes em clientes.",
     image: blogFacebookImage,
@@ -30,6 +33,7 @@ const blogPosts = [
   },
   {
     id: 3,
+    slug: "automacao-marketing-economizar-tempo",
     title: "Automação de Marketing: Como Economizar Tempo e Aumentar Resultados",
     excerpt: "Conheça as ferramentas e estratégias de automação que podem revolucionar seu marketing, economizando tempo e melhorando seus resultados.",
     image: blogAutomationImage,
@@ -42,8 +46,9 @@ const blogPosts = [
 ];
 const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
   return (
-    <div className="glass-card rounded-xl p-0.5 h-full">
-      <div className="bg-card rounded-xl h-full flex flex-col overflow-hidden">
+    <Link to={`/blog/${post.slug}`} className="block h-full">
+      <div className="glass-card rounded-xl p-0.5 h-full hover:scale-[1.02] transition-transform duration-300">
+        <div className="bg-card rounded-xl h-full flex flex-col overflow-hidden">
         <div className="relative overflow-hidden h-48">
           <img 
             src={post.image} 
@@ -82,16 +87,14 @@ const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
             {post.excerpt}
           </p>
           
-          <a 
-            href={`#blog/${post.id}`}
-            className="flex items-center text-primary font-medium text-sm group"
-          >
+          <div className="flex items-center text-primary font-medium text-sm group">
             Ler artigo completo
             <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </div>
+        </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -115,13 +118,13 @@ const BlogPreview = () => {
             </h2>
           </div>
           
-          <a 
-            href="#blog-all" 
+          <Link 
+            to="/blog" 
             className="mt-6 md:mt-0 flex items-center group text-white"
           >
             Ver todas as publicações
             <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
