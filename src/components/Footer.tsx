@@ -87,12 +87,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-primary transition-colors flex items-center group">
-                  <span className="w-2 h-0.5 bg-gray-600 group-hover:bg-primary group-hover:w-3 mr-2 transition-all"></span>
-                  Sobre Nós
-                </a>
-              </li>
-              <li>
                 <a href="#contact" className="text-gray-400 hover:text-primary transition-colors flex items-center group">
                   <span className="w-2 h-0.5 bg-gray-600 group-hover:bg-primary group-hover:w-3 mr-2 transition-all"></span>
                   Contato
