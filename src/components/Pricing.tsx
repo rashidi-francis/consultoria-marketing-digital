@@ -64,9 +64,9 @@ const Pricing = () => {
             Planos e Preços
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Escolha o plano ideal para
+            Escolha o plano ideal para implementar
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-green ml-2">
-              seu negócio
+              IA conversacional no seu WhatsApp ou site
             </span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto mb-8">
