@@ -5,6 +5,8 @@ import {
   Clock,
   Instagram, 
   Facebook,
+  Linkedin,
+  Twitter,
   MessageCircle
 } from "lucide-react";
 import marketingTeam from "@/assets/marketing-team.jpg";
@@ -87,6 +89,12 @@ const ContactForm = () => {
                     </a>
                     <a href="https://www.facebook.com/ajudoseunegocio" target="_blank" rel="noopener noreferrer">
                       <Facebook className="w-8 h-8 text-primary hover:text-white transition-colors" />
+                    </a>
+                    <a href="https://x.com/ajudoseunegocio" target="_blank" rel="noopener noreferrer">
+                      <Twitter className="w-8 h-8 text-primary hover:text-white transition-colors" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/ajudo-seu-negócio" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="w-8 h-8 text-primary hover:text-white transition-colors" />
                     </a>
                   </div>
                 </div>
