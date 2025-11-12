@@ -6,6 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import Partners from "@/components/Partners";
 import Quiz from "@/components/Quiz";
 import BlogPreview from "@/components/BlogPreview";
+import Pricing from "@/components/Pricing";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -49,6 +50,7 @@ const Index = () => {
         <Partners />
         <Quiz />
         <BlogPreview />
+        <Pricing />
         <ContactForm />
       </main>
       <Footer />

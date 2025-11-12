@@ -68,10 +68,10 @@ const Navbar = () => {
             Login
           </a>
           <a 
-            href="#contact" 
+            href="#precos" 
             className="neo-btn px-5 py-2 rounded-lg bg-primary text-black font-medium hover:bg-primary/90"
           >
-            Agendar
+            Agendar Demo
           </a>
         </div>
 
@@ -115,11 +115,11 @@ const Navbar = () => {
               Login
             </a>
             <a 
-              href="#contact" 
+              href="#precos" 
               className="neo-btn py-3 text-center w-full rounded-lg bg-primary text-black font-medium hover:bg-primary/90"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Agendar
+              Agendar Demo
             </a>
           </div>
         </div>
