@@ -198,9 +198,6 @@ const Footer = () => {
             <a href="https://ajudoseunegocio.com.br/politica-de-privacidade" className="text-gray-500 text-sm hover:text-gray-400 transition-colors">
               Termos de Serviço
             </a>
-            <a href="#" className="text-gray-500 text-sm hover:text-gray-400 transition-colors">
-              Perguntas Frequentes
-            </a>
           </div>
         </div>
       </div>
