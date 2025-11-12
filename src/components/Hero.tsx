@@ -63,7 +63,7 @@ const Hero = () => {
                 href="#precos" 
                 className="neo-btn flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-black font-semibold hover:bg-primary/90 group w-full sm:w-auto"
               >
-                Agendar Demo
+                Quero IA no meu WhatsApp ou Website
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
               <a 
