@@ -70,7 +70,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0], index: n
   return (
     <div 
       id={cardId}
-      className="glass-card rounded-xl p-0.5 h-full group relative"
+      className="glass-card rounded-xl p-0.5 h-full group relative scroll-mt-24"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-transparent group-hover:from-[#00f3ff20] group-hover:via-[#9b00ff20] group-hover:to-[#ff00f720] transition-all duration-500"></div>
