@@ -10,7 +10,7 @@ import {
 import marketingTeam from "@/assets/marketing-team.jpg";
 
 const ContactForm = () => {
-  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5511930500397&text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consultoria%20personalizada%20para%20o%20meu%20negócio";
+  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5511930500397&text=Olá,%20vim%20do%20chat%20lá%20no%20site,%20gostaria%20mais%20informações....";
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
@@ -43,7 +43,7 @@ const ContactForm = () => {
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-white font-medium mb-1">WhatsApp (Clique para iniciar Chat)</h4>
+                      <h4 className="text-white font-medium mb-1">WhatsApp</h4>
                       <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                         <p className="text-gray-400 hover:underline">(11) 9 3050-0397</p>
                       </a>
