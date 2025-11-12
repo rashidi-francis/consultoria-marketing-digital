@@ -22,7 +22,6 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
     { name: "Serviços", href: "#services" },
     { name: "Depoimentos", href: "#testimonials" },
     { name: "Blog", href: "#blog" },
@@ -61,12 +60,6 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}
-          <a 
-            href="#login" 
-            className="px-5 py-2 rounded-lg border border-primary/50 text-primary hover:bg-primary/10 transition-all duration-300"
-          >
-            Login
-          </a>
           <a 
             href="#precos" 
             className="neo-btn px-5 py-2 rounded-lg bg-primary text-black font-medium hover:bg-primary/90"
@@ -107,13 +100,6 @@ const Navbar = () => {
             </a>
           ))}
           <div className="flex flex-col space-y-4 w-full max-w-xs">
-            <a 
-              href="#login" 
-              className="py-3 text-center w-full rounded-lg border border-primary/50 text-primary hover:bg-primary/10 transition-all duration-300"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Login
-            </a>
             <a 
               href="#precos" 
               className="neo-btn py-3 text-center w-full rounded-lg bg-primary text-black font-medium hover:bg-primary/90"
