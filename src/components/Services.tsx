@@ -221,19 +221,21 @@ const Services = () => {
               </div>
               
               {/* Right Image */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/30 to-neon-purple/30 rounded-2xl blur-2xl animate-glow"></div>
-                <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                  <img 
-                    src={whatsappMessages} 
-                    alt="WhatsApp recebendo mensagens de clientes"
-                    className="w-full h-auto object-cover"
-                  />
-                  
-                  {/* Overlay indicators */}
-                  <div className="absolute top-4 right-4 flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/90 backdrop-blur-sm animate-pulse">
-                    <div className="w-2 h-2 rounded-full bg-white"></div>
-                    <span className="text-white text-sm font-semibold">24+ mensagens não lidas</span>
+              <div className="relative flex justify-center">
+                <div className="relative w-full max-w-xs">
+                  <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/30 to-neon-purple/30 rounded-2xl blur-2xl animate-glow"></div>
+                  <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[9/16]">
+                    <img 
+                      src={whatsappMessages} 
+                      alt="WhatsApp recebendo mensagens de clientes"
+                      className="w-full h-full object-cover"
+                    />
+                    
+                    {/* Overlay indicators */}
+                    <div className="absolute top-4 right-4 flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/90 backdrop-blur-sm animate-pulse">
+                      <div className="w-2 h-2 rounded-full bg-white"></div>
+                      <span className="text-white text-sm font-semibold">24+ mensagens não lidas</span>
+                    </div>
                   </div>
                 </div>
               </div>
