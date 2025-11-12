@@ -20,7 +20,7 @@ const services = [
     description: "Integração de IA em WhatsApp com conversa humanizada, atendimento inteligente em sites e automações que transformam a experiência do seu cliente.",
     color: "neon-blue",
     buttonText: "Quero IA no meu WhatsApp",
-    whatsappMessage: "Olá, vim do site, gostaria de informações sobre o serviço de Inteligência Artificial para WhatsApp"
+    link: "#precos"
   },
   {
     icon: Target,
@@ -86,9 +86,9 @@ const ServiceCard = ({ service, index }: { service: typeof services[0], index: n
         </p>
         <div className="mt-6 pt-4 border-t border-white/10">
           <a 
-            href={`https://wa.me/5511930500397?text=${encodeURIComponent(service.whatsappMessage)}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={service.link || `https://wa.me/5511930500397?text=${encodeURIComponent(service.whatsappMessage)}`}
+            target={service.link ? undefined : "_blank"}
+            rel={service.link ? undefined : "noopener noreferrer"}
             className={`inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-gradient-to-r from-${service.color}/20 to-${service.color}/10 border border-${service.color}/30 text-${service.color} font-semibold text-sm transition-all duration-300 hover:from-${service.color}/30 hover:to-${service.color}/20 hover:border-${service.color}/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.3)] animate-pulse hover:animate-none group-hover:scale-105`}
           >
             <Sparkles className="w-4 h-4" />
