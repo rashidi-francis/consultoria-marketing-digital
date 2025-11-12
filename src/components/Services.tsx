@@ -210,9 +210,7 @@ const Services = () => {
                 </div>
                 
                 <a 
-                  href={`https://wa.me/5511930500397?text=${encodeURIComponent("Olá, vim do site, gostaria de informações sobre o serviço de IA conversacional para WhatsApp")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#precos"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold hover:shadow-[0_0_30px_rgba(0,243,255,0.5)] transition-all duration-300 group"
                 >
                   Quero IA no meu WhatsApp ou Website
