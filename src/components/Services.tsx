@@ -215,7 +215,7 @@ const Services = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold hover:shadow-[0_0_30px_rgba(0,243,255,0.5)] transition-all duration-300 group"
                 >
-                  Quero IA no meu WhatsApp
+                  Quero IA no meu WhatsApp ou Website
                   <Bot className="w-5 h-5 group-hover:rotate-12 transition-transform" />
                 </a>
               </div>
