@@ -138,7 +138,6 @@ const Services = () => {
 
   return (
     <section 
-      id="services" 
       ref={sectionRef}
       className="relative py-24 overflow-hidden"
     >
@@ -244,6 +243,8 @@ const Services = () => {
           </div>
         </div>
 
+        <div id="services" className="scroll-mt-24"></div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} service={service} index={index} />
