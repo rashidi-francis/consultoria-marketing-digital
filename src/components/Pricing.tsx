@@ -94,7 +94,7 @@ const Pricing = () => {
               }`}
             >
               Anual
-              <span className="ml-2 text-xs bg-neon-green/20 text-neon-green px-2 py-0.5 rounded-full">
+              <span className="ml-2 text-xs bg-black/30 text-white px-2 py-0.5 rounded-full font-semibold">
                 Economize
               </span>
             </button>
