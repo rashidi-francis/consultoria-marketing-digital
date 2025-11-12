@@ -187,7 +187,7 @@ const Services = () => {
               <div className="space-y-6 relative z-10">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-blue/10 border border-neon-blue/30">
                   <MessageCircle className="w-5 h-5 text-neon-blue animate-pulse" />
-                  <span className="text-sm font-semibold text-neon-blue">IA Conversacional para WhatsApp</span>
+                  <span className="text-sm font-semibold text-neon-blue">IA Conversacional para WhatsApp ou Website</span>
                 </div>
                 
                 <h3 className="text-3xl md:text-4xl font-bold leading-tight">
