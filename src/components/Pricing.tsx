@@ -144,7 +144,7 @@ const Pricing = () => {
                 </ul>
 
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5511930500397&text=Olá,%20vim%20a%20partir%20do%20site...."
+                  href={`https://api.whatsapp.com/send/?phone=5511930500397&text=Olá,%20vim%20da%20vossa%20plataforma%20de%20IA,%20gostaria%20contratar%20o%20plano%20${plan.name}%20${isAnnual ? 'anual' : 'mensal'}%20pra%20IA%20conversacional.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full py-3 rounded-lg text-center font-semibold transition-all duration-300 ${
@@ -153,7 +153,7 @@ const Pricing = () => {
                       : "border border-white/20 bg-white/5 text-white hover:bg-white/10"
                   }`}
                 >
-                  Agendar Demo
+                  Assinar Plano {plan.name} {isAnnual ? 'Anual' : 'Mensal'}
                 </a>
               </div>
             </div>
