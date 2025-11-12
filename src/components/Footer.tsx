@@ -162,7 +162,14 @@ const Footer = () => {
             <div className="mt-6 space-y-3">
               <div className="flex items-start">
                 <Phone className="w-5 h-5 text-primary mr-3 mt-0.5" />
-                <span className="text-gray-400">(11) 9 3050-0397</span>
+                <a 
+                  href="https://wa.me/5511930500397?text=Olá,%20vim%20do%20chat%20lá%20no%20site,%20gostaria%20mais%20informações...." 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  (11) 9 3050-0397
+                </a>
               </div>
               <div className="flex items-start">
                 <Mail className="w-5 h-5 text-primary mr-3 mt-0.5" />
