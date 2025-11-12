@@ -9,6 +9,42 @@ import authorAvatar from "@/assets/nathalia-avatar.jpg";
 
 const blogPosts = [
   {
+    id: 4,
+    slug: "webdesign-moderno-pequenas-empresas",
+    title: "Webdesign Moderno: Como um Site Profissional Transforma Seu Negócio",
+    excerpt: "Descubra como um design moderno e profissional pode aumentar sua credibilidade, melhorar a experiência do usuário e gerar mais conversões.",
+    image: blogSeoImage,
+    author: "Ricardo Almeida",
+    authorImage: authorAvatar,
+    date: "15 Mar 2024",
+    readTime: "7 min",
+    category: "Webdesign"
+  },
+  {
+    id: 5,
+    slug: "guia-completo-formatacao-instalacao-windows",
+    title: "Guia Completo: Formatação e Instalação do Windows do Zero",
+    excerpt: "Aprenda passo a passo como formatar seu computador e instalar o Windows de forma limpa e segura, otimizando o desempenho do seu sistema.",
+    image: blogFacebookImage,
+    author: "Bruno Costa",
+    authorImage: authorAvatar,
+    date: "22 Jul 2024",
+    readTime: "10 min",
+    category: "Tecnologia"
+  },
+  {
+    id: 6,
+    slug: "identidade-visual-impacto-marca",
+    title: "Identidade Visual: O Impacto de uma Marca Bem Definida",
+    excerpt: "Entenda como uma identidade visual consistente e profissional pode fortalecer sua marca e criar conexão emocional com seus clientes.",
+    image: blogAutomationImage,
+    author: "Ana Paula Silva",
+    authorImage: authorAvatar,
+    date: "10 Set 2024",
+    readTime: "6 min",
+    category: "Branding"
+  },
+  {
     id: 1,
     slug: "7-estrategias-seo-pequenas-empresas",
     title: "7 Estratégias de SEO para Pequenas Empresas em 2023",
