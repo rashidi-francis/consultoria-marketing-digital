@@ -1,15 +1,18 @@
-
 import { ArrowRight } from "lucide-react";
+import blogSeoImage from "@/assets/blog-seo-strategies.jpg";
+import blogFacebookImage from "@/assets/blog-facebook-ads.jpg";
+import blogAutomationImage from "@/assets/blog-marketing-automation.jpg";
+import authorAvatar from "@/assets/nathalia-avatar.jpg";
 
-// Placeholder blog posts
+// Blog posts
 const blogPosts = [
   {
     id: 1,
     title: "7 Estratégias de SEO para Pequenas Empresas em 2023",
     excerpt: "Descubra as melhores práticas de SEO que podem ajudar seu negócio a se destacar nos resultados de busca sem precisar de um grande orçamento.",
-    image: "https://via.placeholder.com/800x600/0d1117/00f3ff?text=SEO+Strategies",
+    image: blogSeoImage,
     author: "Mariana Santos",
-    authorImage: "https://randomuser.me/api/portraits/women/45.jpg",
+    authorImage: authorAvatar,
     date: "12 Jun 2023",
     readTime: "6 min",
     category: "SEO"
@@ -18,9 +21,9 @@ const blogPosts = [
     id: 2,
     title: "Como Criar Anúncios que Realmente Convertem no Facebook",
     excerpt: "Aprenda as técnicas comprovadas para criar anúncios no Facebook que não apenas geram cliques, mas também convertem visitantes em clientes.",
-    image: "https://via.placeholder.com/800x600/0d1117/9b00ff?text=Facebook+Ads",
+    image: blogFacebookImage,
     author: "Rafael Oliveira",
-    authorImage: "https://randomuser.me/api/portraits/men/32.jpg",
+    authorImage: authorAvatar,
     date: "05 Jun 2023",
     readTime: "8 min",
     category: "Redes Sociais"
@@ -29,15 +32,14 @@ const blogPosts = [
     id: 3,
     title: "Automação de Marketing: Como Economizar Tempo e Aumentar Resultados",
     excerpt: "Conheça as ferramentas e estratégias de automação que podem revolucionar seu marketing, economizando tempo e melhorando seus resultados.",
-    image: "https://via.placeholder.com/800x600/0d1117/ff00f7?text=Marketing+Automation",
+    image: blogAutomationImage,
     author: "Camila Ferreira",
-    authorImage: "https://randomuser.me/api/portraits/women/68.jpg",
+    authorImage: authorAvatar,
     date: "29 Mai 2023",
     readTime: "5 min",
     category: "Automação"
   }
 ];
-
 const BlogCard = ({ post }: { post: typeof blogPosts[0] }) => {
   return (
     <div className="glass-card rounded-xl p-0.5 h-full">
