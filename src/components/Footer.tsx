@@ -177,7 +177,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 text-primary mr-3 mt-0.5" />
-                <span className="text-gray-400">Rua Praça da Sé, 21 - Centro São Paulo - SP</span>
+                <span className="text-gray-400">Rua Anchieta, 18 - Centro São Paulo - SP</span>
               </div>
             </div>
           </div>

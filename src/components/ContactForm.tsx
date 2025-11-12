@@ -66,7 +66,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-medium mb-1">Endereço</h4>
-                      <p className="text-gray-400">Rua Praça da Sé, 21 - Centro São Paulo - SP</p>
+                      <p className="text-gray-400">Rua Anchieta, 18 - Centro São Paulo - SP</p>
                     </div>
                   </div>
                   
