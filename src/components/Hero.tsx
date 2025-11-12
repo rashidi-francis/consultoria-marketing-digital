@@ -67,10 +67,10 @@ const Hero = () => {
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
               <a 
-                href="#services" 
+                href="#trafego-pago" 
                 className="px-6 py-3 rounded-lg border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
               >
-                Conheça Nossos Serviços
+                Conheça nossos serviços - Agenciamento de Marketing digital
               </a>
             </div>
           </div>

@@ -65,8 +65,11 @@ const services = [
 ];
 
 const ServiceCard = ({ service, index }: { service: typeof services[0], index: number }) => {
+  const cardId = service.title === "Tráfego Pago" ? "trafego-pago" : undefined;
+  
   return (
     <div 
+      id={cardId}
       className="glass-card rounded-xl p-0.5 h-full group relative"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
