@@ -151,7 +151,7 @@ const Pricing = () => {
                     plan.highlighted
                       ? "bg-primary text-black hover:bg-primary/90 neo-btn"
                       : "border border-white/20 bg-white/5 text-white hover:bg-white/10"
-                  }`}
+                  } ${isAnnual ? 'cta-whatsapp-pricing-anual' : 'cta-whatsapp-pricing-mensal'}`}
                 >
                   Assinar Plano {plan.name} {isAnnual ? 'Anual' : 'Mensal'}
                 </a>

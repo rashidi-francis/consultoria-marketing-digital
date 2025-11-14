@@ -46,7 +46,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-medium mb-1">WhatsApp</h4>
-                      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="cta-whatsapp-contact-phone">
                         <p className="text-gray-400 hover:underline">(11) 9 3050-0397</p>
                       </a>
                     </div>
@@ -104,7 +104,7 @@ const ContactForm = () => {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-4 px-6 bg-green-500 hover:bg-green-600 text-white rounded-full transition-colors flex items-center justify-center gap-3 font-semibold text-lg shadow-lg"
+                  className="cta-whatsapp-contact-chat w-full py-4 px-6 bg-green-500 hover:bg-green-600 text-white rounded-full transition-colors flex items-center justify-center gap-3 font-semibold text-lg shadow-lg"
                 >
                   <MessageCircle className="w-6 h-6" />
                   Falar no WhatsApp
