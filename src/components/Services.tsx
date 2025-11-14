@@ -92,7 +92,14 @@ const ServiceCard = ({ service, index }: { service: typeof services[0], index: n
             href={service.link || `https://wa.me/5511930500397?text=${encodeURIComponent(service.whatsappMessage)}`}
             target={service.link ? undefined : "_blank"}
             rel={service.link ? undefined : "noopener noreferrer"}
-            className={`inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-gradient-to-r from-${service.color}/20 to-${service.color}/10 border border-${service.color}/30 text-${service.color} font-semibold text-sm transition-all duration-300 hover:from-${service.color}/30 hover:to-${service.color}/20 hover:border-${service.color}/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.3)] animate-pulse hover:animate-none group-hover:scale-105`}
+            className={`inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-gradient-to-r from-${service.color}/20 to-${service.color}/10 border border-${service.color}/30 text-${service.color} font-semibold text-sm transition-all duration-300 hover:from-${service.color}/30 hover:to-${service.color}/20 hover:border-${service.color}/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.3)] animate-pulse hover:animate-none group-hover:scale-105 ${
+              service.title === "Inteligência Artificial" ? "cta-whatsapp-ia" :
+              service.title === "Tráfego Pago" ? "cta-whatsapp-trafego-pago" :
+              service.title === "Social Media" ? "cta-whatsapp-social-media" :
+              service.title === "Web Designer" ? "cta-whatsapp-webdesign" :
+              service.title === "Identidade Visual" ? "cta-whatsapp-identidade-visual" :
+              service.title === "Instalação de Windows" ? "cta-whatsapp-instalacao-windows" : ""
+            }`}
           >
             <Sparkles className="w-4 h-4" />
             {service.buttonText}
