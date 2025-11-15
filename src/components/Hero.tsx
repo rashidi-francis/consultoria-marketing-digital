@@ -70,7 +70,7 @@ const Hero = () => {
                 href="#social-media" 
                 className="px-6 py-3 rounded-lg border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
               >
-                Conheça nossos serviços - Agenciamento de Marketing digital
+                Tráfego Pago e Social Media
               </a>
             </div>
           </div>
