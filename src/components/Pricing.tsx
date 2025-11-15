@@ -73,6 +73,13 @@ const Pricing = () => {
             Automatize seu atendimento e escale suas operações com nossos agentes inteligentes
           </p>
 
+          {/* Teste Grátis Banner */}
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-neon-green/20 to-neon-blue/20 border border-neon-green/30 mb-8">
+            <span className="text-neon-green font-bold text-lg">🎁</span>
+            <span className="text-white font-semibold">Teste grátis por 3 dias</span>
+            <span className="text-gray-300">da ferramenta de IA para WhatsApp</span>
+          </div>
+
           {/* Toggle Anual/Mensal */}
           <div className="inline-flex items-center gap-3 glass-card rounded-full p-1">
             <button
