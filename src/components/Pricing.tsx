@@ -127,7 +127,7 @@ const Pricing = () => {
                       R$ {isAnnual ? plan.annualPrice : plan.monthlyPrice}
                     </span>
                     <span className="text-gray-400">
-                      /{isAnnual ? "ano" : "mês"}
+                      /mês
                     </span>
                   </div>
                 </div>
