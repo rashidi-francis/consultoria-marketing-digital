@@ -12,9 +12,14 @@ import Footer from "@/components/Footer";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import nathaliaAvatar from "@/assets/nathalia-avatar.jpg";
+import { sendMetaEvent } from "@/lib/meta-events";
 
 const Index = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  useEffect(() => {
+    sendMetaEvent("PageView");
+  }, []);
 
   // Add smooth scroll effect for anchor links
   useEffect(() => {
