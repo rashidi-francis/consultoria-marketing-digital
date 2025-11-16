@@ -64,7 +64,7 @@ const Navbar = () => {
             href="#precos" 
             className="neo-btn px-5 py-2 rounded-lg bg-primary text-black font-medium hover:bg-primary/90"
           >
-            Agendar Demo
+            Teste IA Grátis
           </a>
         </div>
 
@@ -105,7 +105,7 @@ const Navbar = () => {
               className="neo-btn py-3 text-center w-full rounded-lg bg-primary text-black font-medium hover:bg-primary/90"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Agendar Demo
+              Teste IA Grátis
             </a>
           </div>
         </div>
