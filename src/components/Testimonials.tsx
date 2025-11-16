@@ -166,7 +166,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="relative py-24 overflow-hidden">
+    <section id="depoimentos" className="relative py-24 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-radial from-neon-purple/5 via-transparent to-transparent opacity-50"></div>
       
