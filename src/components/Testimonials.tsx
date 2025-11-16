@@ -7,35 +7,35 @@ const testimonials = [
     name: "Amanda Silva",
     role: "CEO, Tech Solutions",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    content: "A consultoria da Ajudo Seu Negócio transformou completamente nossa presença digital. Em apenas 3 meses, aumentamos nosso tráfego em 200% e nossas conversões dobraram!",
+    content: "A IA para WhatsApp da Ajudo Seu Negócio revolucionou nosso atendimento! Automatizamos 80% das conversas e aumentamos as vendas em 200%. A equipe fica livre para focar em casos complexos.",
     rating: 5
   },
   {
     name: "Ricardo Almeida",
     role: "Fundador, Almeida Fitness",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    content: "Estávamos lutando para fazer nossa academia se destacar online até contratarmos a Ajudo Seu Negócio. A estratégia de conteúdo que eles desenvolveram trouxe resultados impressionantes.",
+    content: "As campanhas de tráfego pago que a equipe criou trouxeram resultados incríveis! Reduzimos o custo por lead em 60% e triplicamos as matrículas na academia em apenas 2 meses.",
     rating: 5
   },
   {
     name: "Juliana Costa",
     role: "Diretora de Marketing, JC Cosméticos",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
-    content: "A estratégia de e-mail marketing implementada pela equipe multiplicou nossas vendas. O ROI foi simplesmente incrível, melhor investimento que fizemos em anos!",
+    content: "A gestão de Social Media transformou nossa marca! O engajamento cresceu 300%, criamos uma comunidade fiel e as vendas pelo Instagram dispararam. Conteúdo de altíssima qualidade!",
     rating: 5
   },
   {
     name: "Fernando Mendes",
     role: "Proprietário, Café Cultura",
     image: "https://randomuser.me/api/portraits/men/75.jpg",
-    content: "Nossa presença local cresceu exponencialmente com a estratégia de SEO da Ajudo Seu Negócio. As reservas online aumentaram mais de 150% em poucos meses.",
-    rating: 4
+    content: "A IA no WhatsApp atende nossos clientes 24/7 com agilidade impressionante. As reservas automáticas aumentaram 150% e a satisfação dos clientes melhorou significativamente!",
+    rating: 5
   },
   {
     name: "Carla Oliveira",
     role: "Gerente, Boutique Elegance",
     image: "https://randomuser.me/api/portraits/women/89.jpg",
-    content: "A gestão de campanhas pagas feita pela equipe revolucionou nosso e-commerce. Conseguimos reduzir o custo por aquisição e aumentar a margem de lucro significativamente.",
+    content: "O investimento em tráfego pago e Social Media foi o melhor que já fizemos! ROI de 450%, nosso e-commerce explodiu e criamos uma presença digital muito forte no mercado.",
     rating: 5
   }
 ];
