@@ -15,7 +15,7 @@ const ContactForm = () => {
   const whatsappUrl = "https://api.whatsapp.com/send/?phone=5511930500397&text=Olá,%20vim%20do%20chat%20lá%20no%20site,%20gostaria%20mais%20informações....";
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
+    <section id="contato" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1 rounded-full border border-primary/30 bg-primary/5 text-sm font-medium text-primary mb-4">
