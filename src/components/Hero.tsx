@@ -60,7 +60,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-6 items-center justify-center md:justify-start animate-fade-in" style={{animationDelay: '0.6s'}}>
               <a 
-                href="#precos" 
+                href="#demo" 
                 className="neo-btn flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-black font-semibold hover:bg-primary/90 group w-full sm:w-auto"
               >
                 Testar IA pra WhatsApp

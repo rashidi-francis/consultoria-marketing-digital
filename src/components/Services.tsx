@@ -20,7 +20,7 @@ const services = [
     description: "Integração de IA em WhatsApp com conversa humanizada, atendimento inteligente em sites e automações que transformam a experiência do seu cliente.",
     color: "neon-blue",
     buttonText: "Quero IA no meu WhatsApp",
-    link: "#precos"
+    link: "#demo"
   },
   {
     icon: Target,
@@ -220,7 +220,7 @@ const Services = () => {
                 </div>
                 
                 <a 
-                  href="#precos"
+                  href="#demo"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold hover:shadow-[0_0_30px_rgba(0,243,255,0.5)] transition-all duration-300 group"
                 >
                   Quero IA no meu WhatsApp ou Website
