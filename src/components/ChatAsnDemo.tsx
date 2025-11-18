@@ -1,6 +1,51 @@
-import chatAsnConversation from "@/assets/chatasn-conversation.png";
+import { useEffect, useState } from "react";
 
 const ChatAsnDemo = () => {
+  const [messages, setMessages] = useState<Array<{ text: string; sender: 'user' | 'bot'; typing?: boolean }>>([]);
+  const [currentStep, setCurrentStep] = useState(0);
+
+  const conversation = [
+    { text: "Olá! Gostaria de agendar uma consulta", sender: 'user' as const },
+    { text: "Olá! Claro, vou te ajudar com isso. Qual serviço você precisa?", sender: 'bot' as const },
+    { text: "Preciso de uma consulta com dentista", sender: 'user' as const },
+    { text: "Perfeito! Temos horários disponíveis esta semana. Qual dia prefere?", sender: 'bot' as const },
+    { text: "Terça-feira à tarde seria ideal", sender: 'user' as const },
+    { text: "Ótimo! Temos disponibilidade às 14h e 16h. Qual horário prefere?", sender: 'bot' as const },
+    { text: "14h está perfeito", sender: 'user' as const },
+    { text: "Agendado! Sua consulta está marcada para terça-feira às 14h. Você receberá uma confirmação por email. Precisa de mais alguma coisa?", sender: 'bot' as const },
+  ];
+
+  useEffect(() => {
+    if (currentStep < conversation.length) {
+      const timer = setTimeout(() => {
+        const message = conversation[currentStep];
+        
+        // Show typing indicator for bot messages
+        if (message.sender === 'bot') {
+          setMessages(prev => [...prev, { text: '', sender: 'bot', typing: true }]);
+          
+          setTimeout(() => {
+            setMessages(prev => [...prev.slice(0, -1), message]);
+            setCurrentStep(prev => prev + 1);
+          }, 1500);
+        } else {
+          setMessages(prev => [...prev, message]);
+          setCurrentStep(prev => prev + 1);
+        }
+      }, currentStep === 0 ? 500 : 2000);
+
+      return () => clearTimeout(timer);
+    } else {
+      // Reset animation after completion
+      const resetTimer = setTimeout(() => {
+        setMessages([]);
+        setCurrentStep(0);
+      }, 5000);
+      
+      return () => clearTimeout(resetTimer);
+    }
+  }, [currentStep]);
+
   return (
     <section id="demo" className="py-24 relative overflow-hidden">
       {/* Background Elements */}
@@ -23,19 +68,51 @@ const ChatAsnDemo = () => {
         </div>
 
         <div className="max-w-md mx-auto">
-          <div className="glass-card rounded-3xl p-2 hover:scale-105 transition-transform duration-300">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              {/* Phone Frame Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-neon-green/20 to-neon-blue/20 pointer-events-none"></div>
-              
-              <img 
-                src={chatAsnConversation}
-                alt="ChatASN conversando com cliente no WhatsApp, agendando consulta com Dr. Gustavo"
-                className="w-full h-auto"
-              />
-              
-              {/* Glow Effect */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-neon-green/20 to-neon-blue/20 blur-xl opacity-50 -z-10"></div>
+          <div className="glass-card rounded-3xl p-4">
+            {/* WhatsApp Header */}
+            <div className="bg-[#075E54] rounded-t-2xl p-4 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-semibold">
+                AI
+              </div>
+              <div>
+                <h3 className="text-white font-semibold">ChatASN Bot</h3>
+                <p className="text-green-200 text-xs">online</p>
+              </div>
+            </div>
+
+            {/* Chat Messages */}
+            <div className="bg-[#ECE5DD] p-4 min-h-[500px] max-h-[500px] overflow-y-auto rounded-b-2xl" style={{ backgroundImage: "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><rect fill=\"%23ECE5DD\" width=\"100\" height=\"100\"/><path d=\"M0 0 L50 50 L0 100\" stroke=\"%23D1D7DB\" stroke-width=\"0.5\" fill=\"none\" opacity=\"0.1\"/></svg>')" }}>
+              {messages.map((message, index) => (
+                <div
+                  key={index}
+                  className={`flex mb-3 animate-fade-in ${
+                    message.sender === 'user' ? 'justify-end' : 'justify-start'
+                  }`}
+                >
+                  {message.typing ? (
+                    <div className="bg-white rounded-lg px-4 py-3 max-w-[80%] shadow-sm">
+                      <div className="flex gap-1">
+                        <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                        <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                        <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      className={`rounded-lg px-4 py-3 max-w-[80%] shadow-sm ${
+                        message.sender === 'user'
+                          ? 'bg-[#DCF8C6] text-gray-800'
+                          : 'bg-white text-gray-800'
+                      }`}
+                    >
+                      <p className="text-sm">{message.text}</p>
+                      <span className="text-xs text-gray-500 mt-1 block">
+                        {new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
 
