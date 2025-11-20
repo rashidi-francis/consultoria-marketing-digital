@@ -31,7 +31,7 @@ const App = () => {
         target.tagName === "A" ||
         target.closest("a")
       ) {
-        sendMetaEvent("InitiateCheckout");
+        sendMetaEvent("Contact");
       }
     };
 
