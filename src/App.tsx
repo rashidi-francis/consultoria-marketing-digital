@@ -1,9 +1,10 @@
-
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { sendMetaEvent } from "./lib/meta-events";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import BlogPost1 from "./pages/BlogPost1";
@@ -18,6 +19,26 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+
+      // só dispara se for um botão ou um link que funcione como botão
+      if (
+        target.tagName === "BUTTON" ||
+        target.closest("button") ||
+        target.getAttribute("role") === "button" ||
+        target.tagName === "A" ||
+        target.closest("a")
+      ) {
+        sendMetaEvent("InitiateCheckout");
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
