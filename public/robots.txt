@@ -14,4 +14,4 @@ Allow: /trafego-pago-para-curso-de-ingles-agencia-de-marketing.html
 Allow: /trafego-pago-para-servicos-de-massagem-agencia-de-marketing.html
 Allow: /trafego-pago-para-fonoaudiologia-aparelhos-auditivos-agencia-de-marketing.html
 
-Sitemap: https://ajudoseunegocio.com/sitemap.xml
+Sitemap: https://ajudoseunegocio.com.br/sitemap.xml
