@@ -7,7 +7,7 @@ Allow: /blog/automacao-marketing-economizar-tempo
 Allow: /blog/webdesign-moderno-pequenas-empresas
 Allow: /blog/guia-completo-formatacao-instalacao-windows
 Allow: /blog/identidade-visual-impacto-marca
-Allow: /politica-de-privacidade.html
+Disallow: /politica-de-privacidade.html
 Allow: /trafego-pago-para-lojas-de-camping-pesca-airsoft.html
 Allow: /trafego-pago-para-lojas-de-joias-ourivesaria.html
 Allow: /trafego-pago-para-curso-de-ingles-agencia-de-marketing.html
