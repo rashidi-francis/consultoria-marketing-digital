@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
+Allow: /blog
+Allow: /blog/7-estrategias-seo-pequenas-empresas
+Allow: /blog/anuncios-facebook-que-convertem
+Allow: /blog/automacao-marketing-economizar-tempo
+Allow: /blog/webdesign-moderno-pequenas-empresas
+Allow: /blog/guia-completo-formatacao-instalacao-windows
+Allow: /blog/identidade-visual-impacto-marca
+Allow: /politica-de-privacidade.html
+Allow: /trafego-pago-para-lojas-de-camping-pesca-airsoft.html
+Allow: /trafego-pago-para-lojas-de-joias-ourivesaria.html
+Allow: /trafego-pago-para-curso-de-ingles-agencia-de-marketing.html
+Allow: /trafego-pago-para-servicos-de-massagem-agencia-de-marketing.html
+Allow: /trafego-pago-para-fonoaudiologia-aparelhos-auditivos-agencia-de-marketing.html
 
 Sitemap: https://ajudoseunegocio.com/sitemap.xml
