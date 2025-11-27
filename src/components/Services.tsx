@@ -20,7 +20,7 @@ const services = [
     description: "Integração de IA em WhatsApp com conversa humanizada, atendimento inteligente em sites e automações que transformam a experiência do seu cliente.",
     color: "neon-blue",
     buttonText: "Quero IA no meu WhatsApp",
-    link: "#demo"
+    link: "https://chat.ajudoseunegocio.com.br/"
   },
   {
     icon: Target,
@@ -90,8 +90,8 @@ const ServiceCard = ({ service, index }: { service: typeof services[0], index: n
         <div className="mt-6 pt-4 border-t border-white/10">
           <a 
             href={service.link || `https://wa.me/5511930500397?text=${encodeURIComponent(service.whatsappMessage)}`}
-            target={service.link ? undefined : "_blank"}
-            rel={service.link ? undefined : "noopener noreferrer"}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`inline-flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-gradient-to-r from-${service.color}/20 to-${service.color}/10 border border-${service.color}/30 text-${service.color} font-semibold text-sm transition-all duration-300 hover:from-${service.color}/30 hover:to-${service.color}/20 hover:border-${service.color}/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.3)] animate-pulse hover:animate-none group-hover:scale-105 ${
               service.title === "Inteligência Artificial" ? "cta-whatsapp-ia" :
               service.title === "Tráfego Pago" ? "cta-whatsapp-trafego-pago" :
@@ -220,7 +220,9 @@ const Services = () => {
                 </div>
                 
                 <a 
-                  href="#demo"
+                  href="https://chat.ajudoseunegocio.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold hover:shadow-[0_0_30px_rgba(0,243,255,0.5)] transition-all duration-300 group"
                 >
                   Quero IA no meu WhatsApp ou Website
