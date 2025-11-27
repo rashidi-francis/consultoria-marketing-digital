@@ -61,7 +61,9 @@ const Navbar = () => {
             </a>
           ))}
           <a 
-            href="#demo" 
+            href="https://chat.ajudoseunegocio.com.br/" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="neo-btn px-5 py-2 rounded-lg bg-primary text-black font-medium hover:bg-primary/90"
           >
             Teste IA Grátis
@@ -101,7 +103,9 @@ const Navbar = () => {
           ))}
           <div className="flex flex-col space-y-4 w-full max-w-xs">
             <a 
-              href="#demo" 
+              href="https://chat.ajudoseunegocio.com.br/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="neo-btn py-3 text-center w-full rounded-lg bg-primary text-black font-medium hover:bg-primary/90"
               onClick={() => setMobileMenuOpen(false)}
             >

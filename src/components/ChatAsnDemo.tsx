@@ -160,7 +160,7 @@ const ChatAsnDemo = () => {
 
         <div className="mt-16 text-center">
           <a
-            href="https://api.whatsapp.com/send/?phone=5511930500397&text=Olá,%20vim%20da%20vossa%20plataforma%20de%20IA,%20gostaria%20de%20saber%20mais%20sobre%20o%20ChatASN"
+            href="https://chat.ajudoseunegocio.com.br/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-primary text-black font-semibold hover:bg-primary/90 neo-btn transition-all duration-300 cta-whatsapp-demo"
