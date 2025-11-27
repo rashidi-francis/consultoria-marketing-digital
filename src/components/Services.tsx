@@ -204,7 +204,7 @@ const Services = () => {
                   <span className="text-white">Enquanto você dorme...</span>
                   <br />
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink animate-border-flow">
-                    alguém ainda está perguntando pelo seu produto
+                    alguém ainda está perguntando pelo seu serviço ou produto
                   </span>
                 </h3>
                 
