@@ -16,9 +16,19 @@ import { sendMetaEvent } from "@/lib/meta-events";
 
 const Index = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [notificationCount, setNotificationCount] = useState(0);
 
   useEffect(() => {
     sendMetaEvent("PageView");
+  }, []);
+
+  // Increment notification badge every 10 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNotificationCount(prev => prev + 1);
+    }, 10000);
+    
+    return () => clearInterval(interval);
   }, []);
 
   // Add smooth scroll effect for anchor links
@@ -74,9 +84,11 @@ const Index = () => {
             </div>
             
             {/* Notification Badge */}
-            <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-lg animate-pulse z-10">
-              1
-            </div>
+            {notificationCount > 0 && (
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-lg animate-pulse z-10">
+                {notificationCount}
+              </div>
+            )}
             
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-400 to-green-600 opacity-70 blur-md animate-pulse"></div>
             <DialogTrigger asChild>
