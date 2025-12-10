@@ -14,7 +14,7 @@ const blogPosts = [
     excerpt: "Descubra as melhores práticas de SEO que podem ajudar seu negócio a se destacar nos resultados de busca sem precisar de um grande orçamento.",
     image: blogSeoImage,
     author: "Mariana Santos",
-    authorImage: authorAvatar,
+    authorImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
     date: "12 Jun 2023",
     readTime: "6 min",
     category: "SEO"
@@ -26,7 +26,7 @@ const blogPosts = [
     excerpt: "Aprenda as técnicas comprovadas para criar anúncios no Facebook que não apenas geram cliques, mas também convertem visitantes em clientes.",
     image: blogFacebookImage,
     author: "Rafael Oliveira",
-    authorImage: authorAvatar,
+    authorImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
     date: "05 Jun 2023",
     readTime: "8 min",
     category: "Redes Sociais"
@@ -38,7 +38,7 @@ const blogPosts = [
     excerpt: "Conheça as ferramentas e estratégias de automação que podem revolucionar seu marketing, economizando tempo e melhorando seus resultados.",
     image: blogAutomationImage,
     author: "Camila Ferreira",
-    authorImage: authorAvatar,
+    authorImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
     date: "29 Mai 2023",
     readTime: "5 min",
     category: "Automação"
